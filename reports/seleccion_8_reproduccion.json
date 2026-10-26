@@ -1,0 +1,12 @@
+{
+  "especificacion_sha256": "e9ad0d974e4bfc4a7f377a1b3a5163468f87a8441a7dd23bd978e9d2b65721c6",
+  "modelo_sha256": "460183467c6c0d783e8e05efe4b560ffce61aadf16fe272e4205b9f615b7867a",
+  "scores_sha256": "bcf6af837a5be629f66909360c3524f0a93c0ea48bf031a6d11bf7e315cc1f13",
+  "reproduccion_scores_atol": 1e-12,
+  "modelo_y_especificacion_sin_cambios": true,
+  "seleccion_invariante_a_orden": true,
+  "ejecuciones_notebook": [
+    "root",
+    "notebooks"
+  ]
+}

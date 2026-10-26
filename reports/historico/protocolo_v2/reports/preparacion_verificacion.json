@@ -1,0 +1,37 @@
+{
+  "tests_sinteticos": 5,
+  "fallos": 0,
+  "errores": 0,
+  "ajuste_solo_sintetico": true,
+  "preprocesador_real_sin_fit": true,
+  "raw_dataframe_intacto": true,
+  "csv_original_intacto": true,
+  "referencias_sin_cambios": 105,
+  "referencias_no_disponibles": 0,
+  "cwd_ejecucion": "raiz",
+  "modelos_entrenados": false,
+  "particiones_creadas": false,
+  "sha256_preparado": "2718ad6c88b52da2914b54e5f6eccb51815a2ff3c59100793c093292f900c60c",
+  "versiones": {
+    "python": "3.14.5",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "celdas_notebook": 20,
+  "celdas_codigo_ejecutadas": 9,
+  "errores_notebook": 0,
+  "stderr_celdas": [],
+  "rutas_ejecutadas": [
+    "raiz del proyecto",
+    "notebooks/"
+  ],
+  "csv_reproducido_misma_huella": true,
+  "etiqueta_y_filas_alineadas": true,
+  "duplicados_verificados": 31994,
+  "sha256_notebook": "64f1de722c79e8b4f3dc954354d000781633289a1f0f84269aed32a720e55fc9",
+  "compatibilidad_eda": "Cambio mínimo de comprobación; sintaxis validada, sin repetir análisis."
+}

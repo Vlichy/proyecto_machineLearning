@@ -1,0 +1,379 @@
+{
+  "alcance": "Edición didáctica separada de las fuentes congeladas; sin ejecución ni cambios funcionales.",
+  "archivos": [
+    {
+      "original": "src/__init__.py",
+      "comentado": "codigo_comentado/src/__init__.py",
+      "sha256_original": "85312e2cd5f7538b0bbe0521faf14f9a28eee7195b50f3c5986d6d5d76008515",
+      "sha256_comentado": "7fdf138eb79af54fa2b91277ed0842d5a88364b0fcd5deb66ad02a86eb0d0ac5",
+      "comentarios_nuevos": 3,
+      "AST_identico": true
+    },
+    {
+      "original": "src/audit_baseline.py",
+      "comentado": "codigo_comentado/src/audit_baseline.py",
+      "sha256_original": "ebfc98634ff16939c821d2269a82e1723d1271bc128684196ac20428c564ea25",
+      "sha256_comentado": "b57b62318aecfb095f5653937c86a3c6174e28830a4ffabdde88d1d8446c9bb1",
+      "comentarios_nuevos": 40,
+      "AST_identico": true
+    },
+    {
+      "original": "src/baseline.py",
+      "comentado": "codigo_comentado/src/baseline.py",
+      "sha256_original": "508694e2edc55d9cdf83e7fdae191a945c0ef59f5cae83dec0f03ed685783f42",
+      "sha256_comentado": "1eeec38a98e2cbec9349b3baaabdebd1e75dd487ee999c28df1c58e09daa58dd",
+      "comentarios_nuevos": 16,
+      "AST_identico": true
+    },
+    {
+      "original": "src/cleaning.py",
+      "comentado": "codigo_comentado/src/cleaning.py",
+      "sha256_original": "52793ede516563751221b92be18ae81850f0fc4802d9b6f4dff27ac15bd49b89",
+      "sha256_comentado": "d26461624419b37f09537b3f22a7aec9901cc28411b67c8a0914c1b1375a6453",
+      "comentarios_nuevos": 5,
+      "AST_identico": true
+    },
+    {
+      "original": "src/comparison.py",
+      "comentado": "codigo_comentado/src/comparison.py",
+      "sha256_original": "3d44658eb5a829e2980257104e61c37d5a7f59971bfeee5e96bf71521f9216fc",
+      "sha256_comentado": "95d84a309a9b801ca070f584b723add83bbde9bf2df9963a7970b66f0af01b21",
+      "comentarios_nuevos": 44,
+      "AST_identico": true
+    },
+    {
+      "original": "src/decision_policy.py",
+      "comentado": "codigo_comentado/src/decision_policy.py",
+      "sha256_original": "5b9776ea088e8cb125be7464c0c2579657c600a2750cd8c4e39c90c9b4b1a755",
+      "sha256_comentado": "55518ce9d3787620972a0705c55b75af2eac6645d4db5047982f957f62011332",
+      "comentarios_nuevos": 11,
+      "AST_identico": true
+    },
+    {
+      "original": "src/evaluation_narrative.py",
+      "comentado": "codigo_comentado/src/evaluation_narrative.py",
+      "sha256_original": "87c57c1b7e803c97fe82d9092f8730f99176151c973463f3f66907304c2c2840",
+      "sha256_comentado": "00966e5262b87c0c3bc4522ea8160885d98b800980fc119af6c4df6703f41fda",
+      "comentarios_nuevos": 5,
+      "AST_identico": true
+    },
+    {
+      "original": "src/explainability.py",
+      "comentado": "codigo_comentado/src/explainability.py",
+      "sha256_original": "b41be3e76e0807190d67d8228884e7ba09c7794f57f6a5e94176724f501be3b7",
+      "sha256_comentado": "5dcfae135dc30c59a6c485494beaed1cd9f02ac1f3f904e8551a3f088f878361",
+      "comentarios_nuevos": 27,
+      "AST_identico": true
+    },
+    {
+      "original": "src/features.py",
+      "comentado": "codigo_comentado/src/features.py",
+      "sha256_original": "c150d2ef7a93d2aba990a926cda1eca746e48011764e4dab8ad60ed3cc620213",
+      "sha256_comentado": "be08d42b250aeda6dc7272c18539dd5122d5711f3a7cd57483282b62d3de4573",
+      "comentarios_nuevos": 7,
+      "AST_identico": true
+    },
+    {
+      "original": "src/final_evaluation.py",
+      "comentado": "codigo_comentado/src/final_evaluation.py",
+      "sha256_original": "87b28722e8926466734f958a42fac46a71d797244f74c762437e6ba5f116f080",
+      "sha256_comentado": "efd80696a6122d2ae1acbfa21f49f3e806ff8f1a125c15c1580272e6a9aac413",
+      "comentarios_nuevos": 41,
+      "AST_identico": true
+    },
+    {
+      "original": "src/final_selection.py",
+      "comentado": "codigo_comentado/src/final_selection.py",
+      "sha256_original": "7701253463942f9609f77fd658508f6efbd1e8b87c572375b16668a8b3dab786",
+      "sha256_comentado": "d8baf2ceeeb8ac2d9edaedec951da7b859e60b4381c3f0513f1e16603c6ec3e9",
+      "comentarios_nuevos": 34,
+      "AST_identico": true
+    },
+    {
+      "original": "src/inspection.py",
+      "comentado": "codigo_comentado/src/inspection.py",
+      "sha256_original": "5b41fd7480ddc21989fb65b6c2c8190fc14f9f8ea100357d98ce85c3d7aebedc",
+      "sha256_comentado": "7eae210385b9edfdb69e82b3cdc4d7a9e5b9ecd194e7484d292c81271a91f6d2",
+      "comentarios_nuevos": 6,
+      "AST_identico": true
+    },
+    {
+      "original": "src/optimization.py",
+      "comentado": "codigo_comentado/src/optimization.py",
+      "sha256_original": "6e93ae31d0ef7d4f2da731087f08f2835804885b936bda815161abd53ff1b0c7",
+      "sha256_comentado": "2ffa1105740d65dab87d1856869c3a5984602be1f7e7cdce3882a1ac4e83d917",
+      "comentarios_nuevos": 51,
+      "AST_identico": true
+    },
+    {
+      "original": "src/preparation.py",
+      "comentado": "codigo_comentado/src/preparation.py",
+      "sha256_original": "403f6f45167d319a2841b1843546dda2cfa2f47bc1e662e1ebcd1b4f04210eaa",
+      "sha256_comentado": "dc0c97a32f95d49df844df55a78c88678f10e0f2d61e1efd5e85d9b1b96caaa4",
+      "comentarios_nuevos": 14,
+      "AST_identico": true
+    },
+    {
+      "original": "src/preprocessing.py",
+      "comentado": "codigo_comentado/src/preprocessing.py",
+      "sha256_original": "2877c53e7cefd7d673b4b46500df54ad888c1242af0a783ddd692f45532bae67",
+      "sha256_comentado": "b4104a465431f218f3078b7f85227e6615926f30d5e26737babd0c7cee545a5f",
+      "comentarios_nuevos": 7,
+      "AST_identico": true
+    },
+    {
+      "original": "src/run_notebook.py",
+      "comentado": "codigo_comentado/src/run_notebook.py",
+      "sha256_original": "216f52e479566ce4ce2b08cea97ebed8e664dc9d929cd9084125380907ba96c9",
+      "sha256_comentado": "ce9964a273b6e271c737dcae45530a4063e4155a40b385e1971875b856639e2e",
+      "comentarios_nuevos": 7,
+      "AST_identico": true
+    },
+    {
+      "original": "src/splitting.py",
+      "comentado": "codigo_comentado/src/splitting.py",
+      "sha256_original": "1840c5de0f3124eaa3530a4963a05fbe5878dd5478a999767f2e7a2b9e005fca",
+      "sha256_comentado": "8025c76c71051f18c70daa6fbf21e3d7ddcfac00c9d0f6d54182a2c05626c0dc",
+      "comentarios_nuevos": 3,
+      "AST_identico": true
+    },
+    {
+      "original": "src/temporal_bias_v3.py",
+      "comentado": "codigo_comentado/src/temporal_bias_v3.py",
+      "sha256_original": "17c05fa340c27b7ca6dd1458129175ba62cf58abc32d3f8e974f6ec7bde926bf",
+      "sha256_comentado": "2b54c0645c75d3e16dfe79a75ee58bf5cd0b11aada783b3a6e236e69c123847c",
+      "comentarios_nuevos": 31,
+      "AST_identico": true
+    },
+    {
+      "original": "src/temporal_protocol.py",
+      "comentado": "codigo_comentado/src/temporal_protocol.py",
+      "sha256_original": "d83cf5d676723907fb67e7273cec9463d78f2ba2af1f89e90202455bb0ce0fa9",
+      "sha256_comentado": "f160158d5ab51f2028f6cb1807586d80ae6fe9dcd1d7069c0b4f5a7793a5c495",
+      "comentarios_nuevos": 37,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_audit_baseline.py",
+      "comentado": "codigo_comentado/tests/test_audit_baseline.py",
+      "sha256_original": "f53cea7a11c44873559f78b36d5d9aaec4f2d3066df32141562af8f85ce67263",
+      "sha256_comentado": "7f77e3e724d850a9bfbd6073d58362f6abe449938f813f88f20677427d6d497f",
+      "comentarios_nuevos": 8,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_baseline.py",
+      "comentado": "codigo_comentado/tests/test_baseline.py",
+      "sha256_original": "b7d52d20481792e7fdfc33156fc9f944f886b40a297882cceffa6bd48e894b95",
+      "sha256_comentado": "2531b3a7d5de9f1bb2b919c47a63d6600c3a8a7babc928edd2cf87badfd304ef",
+      "comentarios_nuevos": 10,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_comparison.py",
+      "comentado": "codigo_comentado/tests/test_comparison.py",
+      "sha256_original": "a779c9df5e7e836628b593dbe02d52cf7045909cd7581b877f48a27b0eccae0a",
+      "sha256_comentado": "7a612de936ec24cd032d143b27ef822eca57685c0c0011845da672f225a0ebb9",
+      "comentarios_nuevos": 7,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_decision_policy.py",
+      "comentado": "codigo_comentado/tests/test_decision_policy.py",
+      "sha256_original": "63bc16c993f871de0302ac37dbdcb4387c31b4809941f48e39b9b4e0e65e1d9f",
+      "sha256_comentado": "af5c1af7b6787082d9aa8b32b70807d844b766c985b2397c28532bcd4ee47cee",
+      "comentarios_nuevos": 10,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_explainability.py",
+      "comentado": "codigo_comentado/tests/test_explainability.py",
+      "sha256_original": "8164d312108f6d80fe812f350d41cebe630b63a14234438df9c370f4a788a842",
+      "sha256_comentado": "dce1297a0a55a5c0e15d30571c8efa9a3f43cc542e0e496dfbebfecb6bbf6299",
+      "comentarios_nuevos": 12,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_final_evaluation.py",
+      "comentado": "codigo_comentado/tests/test_final_evaluation.py",
+      "sha256_original": "a00d61b8182c27a0765bd5ee8eca993dd516d1ba63f4c4bdfb75c380d222b5d2",
+      "sha256_comentado": "05baacd51d0af74489732ea0355248a945ac3a6ae3d01103e109eac9bb535f45",
+      "comentarios_nuevos": 19,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_optimization.py",
+      "comentado": "codigo_comentado/tests/test_optimization.py",
+      "sha256_original": "d84c875f314049f77cf4ec4e74b4f5aa98bd16741dee6ab325940487dc340e0d",
+      "sha256_comentado": "cbf7bf0e6add44ed068364dcba3b3de24831253eee95d151969ff30114e70c73",
+      "comentarios_nuevos": 13,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_preparation.py",
+      "comentado": "codigo_comentado/tests/test_preparation.py",
+      "sha256_original": "a8092aaa00c4020630117d1cf2286e8dd9c66cfcbab1cd43c6007e8935a932bc",
+      "sha256_comentado": "2d8e953f6e4ecadc495b0b02f543607e2f9708f9c045c84a554468197ff1e357",
+      "comentarios_nuevos": 12,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_temporal_bias_v3.py",
+      "comentado": "codigo_comentado/tests/test_temporal_bias_v3.py",
+      "sha256_original": "aeff0c9a9d13bf42f77a19ebef19cdcb5b55d3f3ed9e41f82f08dc9e30964326",
+      "sha256_comentado": "666ec7913c713ca8adb593e841df0549d305766f8107e4ee21f88ebe1497d29d",
+      "comentarios_nuevos": 20,
+      "AST_identico": true
+    },
+    {
+      "original": "tests/test_temporal_protocol.py",
+      "comentado": "codigo_comentado/tests/test_temporal_protocol.py",
+      "sha256_original": "c5f80894ad45dcd740528c155cae2009abd6d725db6645446b988af7188b8b77",
+      "sha256_comentado": "75df7cc35c96fb36f4ffda7883d21a329a3ee38b2648b0f6f8551e30268f0ead",
+      "comentarios_nuevos": 12,
+      "AST_identico": true
+    },
+    {
+      "original": "entrega_final/fuentes/auditar_entrega.py",
+      "comentado": "codigo_comentado/entrega_final/fuentes/auditar_entrega.py",
+      "sha256_original": "ed07d3db62741aae19e6a8994d2c7fe7fecdd3d2cd486c4623c304561cc2d4a3",
+      "sha256_comentado": "09befab740ab87fa2c43fedce7f576a837247338f91bf7e713c9ce822fecae4c",
+      "comentarios_nuevos": 26,
+      "AST_identico": true
+    },
+    {
+      "original": "entrega_final/fuentes/exportar_pdf.py",
+      "comentado": "codigo_comentado/entrega_final/fuentes/exportar_pdf.py",
+      "sha256_original": "c955bc3e41a3404e96a9ce416645d052c64f07ee91422990b1f41b4670dd35a1",
+      "sha256_comentado": "da9db4d370892f7ea2fc3a7a1e9c4d51c257c86cdd9015b00848a8c825f96dde",
+      "comentarios_nuevos": 5,
+      "AST_identico": true
+    },
+    {
+      "original": "entrega_final/fuentes/preparar_entrega.py",
+      "comentado": "codigo_comentado/entrega_final/fuentes/preparar_entrega.py",
+      "sha256_original": "fbaf76659be7d310ead9dce12961cf53c521f8a37571774157e9cfc72205af57",
+      "sha256_comentado": "2f1bc905016a9a111b4791e8ab53b87840715fe323db28ce184f97018a1d24ea",
+      "comentarios_nuevos": 14,
+      "AST_identico": true
+    },
+    {
+      "original": "notebooks/baseline.ipynb",
+      "comentado": "codigo_comentado/notebooks/baseline.ipynb",
+      "sha256_original": "713855e376b70e2e4428be7b17928279bda9e0a50a8ed9b09909611dc61ad554",
+      "sha256_comentado": "33d92e65581d900a29e3e01f07d6bb7a41877fb8f76fea00807cd9b5f984781a",
+      "comentarios_nuevos": 37,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/comparacion_modelos.ipynb",
+      "comentado": "codigo_comentado/notebooks/comparacion_modelos.ipynb",
+      "sha256_original": "dd390d56af8eacfb718942b5262e30863e3c96a2a6743c55436610c47f337f23",
+      "sha256_comentado": "b5deba43c7168b850380184268807fdd9fc9985debec13d0d4b8cb13aac10a6c",
+      "comentarios_nuevos": 15,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/correccion_sesgo_temporal.ipynb",
+      "comentado": "codigo_comentado/notebooks/correccion_sesgo_temporal.ipynb",
+      "sha256_original": "d6e00c6d6ec17846220a23f14f17eb4b99dc3867c5c7756ac9ec2148569d697f",
+      "sha256_comentado": "b74d4ca36b2a9848b32a73fb15afdb183ebe31c93ace72431be519c6ac4bef19",
+      "comentarios_nuevos": 24,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/eda.ipynb",
+      "comentado": "codigo_comentado/notebooks/eda.ipynb",
+      "sha256_original": "795f15aa3ee03b538dffff01cc537f41486034aa9b5c404acf5475f0bade66a3",
+      "sha256_comentado": "659b44bec196def59f1687ea27eab25c14af9840c86890a00688646f3c08b525",
+      "comentarios_nuevos": 73,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/evaluacion_final.ipynb",
+      "comentado": "codigo_comentado/notebooks/evaluacion_final.ipynb",
+      "sha256_original": "d042cd55813d444f1868aaae5a30826d5ecd83d2441267c4fd39391a97960bf1",
+      "sha256_comentado": "17e65bf8c018294f5281dcfa370ef5ed740696b2566c15c735e6a026941213ca",
+      "comentarios_nuevos": 20,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/explicabilidad.ipynb",
+      "comentado": "codigo_comentado/notebooks/explicabilidad.ipynb",
+      "sha256_original": "849ba306a3cd7be413abc045403367c34672f4726ce33e4e6ac7d28cd84be557",
+      "sha256_comentado": "52a315eb74e4d392cb4a2598352808ce46cb96d3f28c13722623d72ae38a1924",
+      "comentarios_nuevos": 21,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/optimizacion.ipynb",
+      "comentado": "codigo_comentado/notebooks/optimizacion.ipynb",
+      "sha256_original": "c55bc6bf16e3cfeb294a0e5018854b2c450de86365dec417bdb65dc086872567",
+      "sha256_comentado": "02cbea1363bb86f51fb1e13ec37a26f6506ba9889ddad57dc9329b6fe5156b0d",
+      "comentarios_nuevos": 20,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/preparacion.ipynb",
+      "comentado": "codigo_comentado/notebooks/preparacion.ipynb",
+      "sha256_original": "64f1de722c79e8b4f3dc954354d000781633289a1f0f84269aed32a720e55fc9",
+      "sha256_comentado": "b4bf33a6c005518e7828333d13c6b0982e71507edbbb208ef804563522ef635c",
+      "comentarios_nuevos": 44,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/protocolo_temporal.ipynb",
+      "comentado": "codigo_comentado/notebooks/protocolo_temporal.ipynb",
+      "sha256_original": "f0b1ee4d9661012719f8a9455e16d8f9bc721decbbb5c8a0e8c77046bb9432b2",
+      "sha256_comentado": "76ecc35910d0dfe698e0f467f938d89e22a4cf8278952fee190248dc66de3d1b",
+      "comentarios_nuevos": 27,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "notebooks/seleccion_final.ipynb",
+      "comentado": "codigo_comentado/notebooks/seleccion_final.ipynb",
+      "sha256_original": "124dd2e42aea7c4d64776327f49310ef4f5e2898157ed8b683e3475e9ac61a99",
+      "sha256_comentado": "ecb326580dad99be54b41d9d8b93a7efb7c55a5cf0ba61de5e5137ae586d9ff5",
+      "comentarios_nuevos": 19,
+      "AST_celdas_identico": true,
+      "salidas_originales_conservadas": true,
+      "ejecutado": false
+    },
+    {
+      "original": "entrega_final/fuentes/crear_presentacion.mjs",
+      "comentado": "codigo_comentado/entrega_final/fuentes/crear_presentacion.mjs",
+      "sha256_original": "b3581cfd1e7012add4afd94b9691ba4f4ee9400bfb15a93a44557f65e2853c6f",
+      "sha256_comentado": "dbb244183e199dca88807a847fd76b5a74e3446b5a8d3c2de62a5a6721ebb0b0",
+      "comentarios_nuevos": 29,
+      "solo_insercion_comentarios_linea": true
+    },
+    {
+      "original": "entrega_final/fuentes/renderizar_presentacion.mjs",
+      "comentado": "codigo_comentado/entrega_final/fuentes/renderizar_presentacion.mjs",
+      "sha256_original": "daa7bd6f3ef807cc81142a870a00087fbcd4aa5d1f12286059c8bb3a5e03799c",
+      "sha256_comentado": "296e874ac782a6460e3bcadbd1e26cc6719e6dae3a64c81b9b7c4b8232ece803",
+      "comentarios_nuevos": 4,
+      "solo_insercion_comentarios_linea": true
+    }
+  ],
+  "n_archivos": 44,
+  "comentarios_nuevos": 890
+}

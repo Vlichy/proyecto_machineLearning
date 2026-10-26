@@ -1,0 +1,6 @@
+particion,entrenamiento,validacion,prueba_reservada,no_madura_entrenamiento,no_madura_validacion,no_madura_prueba
+entrenamiento,48428,0,0,0,0,0
+no_madura_entrenamiento,5736,0,0,12089,0,0
+no_madura_validacion,0,4086,0,0,8475,0
+prueba_reservada,0,0,26565,0,0,0
+validacion,0,14011,0,0,0,0

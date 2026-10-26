@@ -1,0 +1,4 @@
+escenario_no_verificado,corte_exclusivo,registros_prueba,fecha_estado_en_o_despues_del_corte,no_cumple_regla_madurez,cumple_regla_madurez
+cierre_hipotetico_ultimo_dia_llegadas,2017-09-01,26565,368,652,25913
+dia_siguiente_al_maximo_estado_no_es_cierre_documentado,2017-09-15,26565,0,2,26563
+corte_posterior_al_maximo_de_cota_no_verificado,2017-09-16,26565,0,0,26565

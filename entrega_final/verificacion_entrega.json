@@ -1,0 +1,90 @@
+{
+  "estado": "verificado",
+  "fase": 10,
+  "archivos_anteriores_intactos": 353,
+  "referencias_curso_intactas": 105,
+  "modelo_y_especificacion_sin_cambios": true,
+  "particiones_v3_sin_cambios": true,
+  "predicciones_y_metricas_fase9_sin_cambios": true,
+  "llamadas_predict_proba_registradas_total": 1,
+  "entrenamientos_fase10": 0,
+  "inferencias_fase10": 0,
+  "paginas_pdf": 15,
+  "diapositivas": 15,
+  "notas_incorporadas": 15,
+  "graficos_editables": 3,
+  "tablas_editables": 4,
+  "figuras_memoria": 7,
+  "notebooks": [
+    {
+      "archivo": "notebooks\\baseline.ipynb",
+      "celdas_ejecutadas_guardadas": 6,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\comparacion_modelos.ipynb",
+      "celdas_ejecutadas_guardadas": 4,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\correccion_sesgo_temporal.ipynb",
+      "celdas_ejecutadas_guardadas": 6,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\eda.ipynb",
+      "celdas_ejecutadas_guardadas": 14,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\evaluacion_final.ipynb",
+      "celdas_ejecutadas_guardadas": 5,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\explicabilidad.ipynb",
+      "celdas_ejecutadas_guardadas": 6,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\optimizacion.ipynb",
+      "celdas_ejecutadas_guardadas": 5,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\preparacion.ipynb",
+      "celdas_ejecutadas_guardadas": 9,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\protocolo_temporal.ipynb",
+      "celdas_ejecutadas_guardadas": 4,
+      "errores": 0,
+      "ejecutado_fase10": false
+    },
+    {
+      "archivo": "notebooks\\seleccion_final.ipynb",
+      "celdas_ejecutadas_guardadas": 5,
+      "errores": 0,
+      "ejecutado_fase10": false
+    }
+  ],
+  "notebooks_reejecutados": 0,
+  "exportacion_pptx_validada": true,
+  "revision_visual": {
+    "paginas_pdf": 15,
+    "diapositivas_finales": 15
+  },
+  "apertura_en_PowerPoint_no_realizada": true,
+  "archivos_entrega": 21,
+  "enunciado_oficial_localizado": false,
+  "autoria_academica_confirmada": false
+}

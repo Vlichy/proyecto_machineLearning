@@ -1,0 +1,107 @@
+{
+  "codigo_version": "fase9_v1_inferencia_unica",
+  "protocolo": {
+    "version": "v3_cohortes_llegada_retrospectivo",
+    "alternative": "B: cohortes por llegada con embargo y seguimiento común por bloque",
+    "train_start": "2015-07-01",
+    "train_end_exclusive": "2016-07-01",
+    "validation_start": "2016-09-01",
+    "validation_end_exclusive": "2017-01-01",
+    "test_start": "2017-03-01",
+    "test_end_exclusive": "2017-09-01",
+    "train_followup_exclusive": "2016-09-01",
+    "validation_followup_exclusive": "2017-03-01",
+    "test_followup_assumed_exclusive": "2018-12-01",
+    "accredited_followup": null,
+    "status_lag_days": 1,
+    "eligibility": "Solo fecha prevista de llegada; sin etiqueta ni fecha de estado por fila.",
+    "followup_audit": "Toda la cohorte train/validación debe pasar; si falla alguna fila se bloquea, no se elimina esa fila.",
+    "purpose": "Evaluación retrospectiva exploratoria por llegadas; no simulación al alta ni holdout virgen."
+  },
+  "modelo": "regresion_logistica_congelada_fase_8",
+  "politica": {
+    "n": 32829,
+    "priorizadas": 6564,
+    "porcentaje_priorizado": 19.994517042858448,
+    "precision": 0.8135283363802559,
+    "recall": 0.40651644336175397,
+    "f1": 0.5421319796954315,
+    "fp": 1224,
+    "fn": 7796,
+    "tp": 5340,
+    "tn": 18469,
+    "matriz_confusion": [
+      [
+        18469,
+        1224
+      ],
+      [
+        7796,
+        5340
+      ]
+    ]
+  },
+  "modelo_global": {
+    "roc_auc": 0.7801860434187309,
+    "average_precision": 0.7416008556912017,
+    "brier": 0.1853395244762256,
+    "tasa_cancelacion": 0.4001340278412379,
+    "probabilidad_media": 0.352073189122223,
+    "canceladas": 13136,
+    "brecha_media": -0.0480608387190149
+  },
+  "politica_especificada": {
+    "tipo": "top_capacidad_mensual",
+    "version_algoritmo": 1,
+    "capacidad_pct": 20,
+    "clave_grupo": "mes_llegada_YYYY-MM",
+    "ambito_hoteles": "ambos hoteles juntos; sin cuotas por hotel",
+    "fraccion_redondeo": "floor",
+    "formula_k": "n_del_mes * 20 // 100",
+    "seed_desempate": 42,
+    "desempate": "score_desc_sha256(seed|ID)_asc_ID_asc_sin_redondear_score",
+    "unidad_id": "meta_row_id entero único del CSV original; orden de entrada no afecta selección",
+    "score": "predict_proba[:, clase 1], float64 sin calibrador ni redondeo",
+    "lote": "mes calendario completo de llegada; retrospectivo, no cola online",
+    "umbral_fijo": null,
+    "accion": "priorizar seguimiento preventivo humano, sin penalizaciones automáticas"
+  },
+  "seguimiento_proxy": {
+    "cierre_asumido_exclusivo": "2018-12-01",
+    "cierre_operativo_acreditado": null,
+    "max_disponibilidad_proxy": "2017-09-15",
+    "estados_proxy_no_anteriores_cierre": 0,
+    "filas_retiradas": 0,
+    "no_garantiza_integridad_real": true
+  },
+  "antelacion_cuantiles": {
+    "validacion": {
+      "0.1": 4.0,
+      "0.5": 66.0,
+      "0.9": 313.0
+    },
+    "prueba": {
+      "0.1": 6.0,
+      "0.5": 103.0,
+      "0.9": 264.0
+    }
+  },
+  "incertidumbre": {
+    "metodo": "bloques móviles no circulares de días; decisiones originales fijas",
+    "longitud_dias": 14,
+    "replicas": 500,
+    "seed": 42,
+    "percentiles": [
+      0.025,
+      0.975
+    ],
+    "cobertura_frecuentista_garantizada": false
+  },
+  "n_inferencias": 1,
+  "refit": false,
+  "recalibracion": false,
+  "especificacion_sha256": "e9ad0d974e4bfc4a7f377a1b3a5163468f87a8441a7dd23bd978e9d2b65721c6",
+  "modelo_sha256": "460183467c6c0d783e8e05efe4b560ffce61aadf16fe272e4205b9f615b7867a",
+  "scores_congelados_sha256": "d2473cb9069ca2abdb53eefe1c49c2e2febaf62a3ccba345d63d028f68f6151f",
+  "etiquetas_sha256": "f6604f52e764b697dd01a9a48465ea87b8ac0b8c76f7ec43a73702bad6510020"
+}

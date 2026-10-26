@@ -1,0 +1,15 @@
+# Fase 9 — Plan de ejecución previo al acceso a resultados
+
+Se evalúa una única vez la regresión logística y política mensual ya congeladas en fase 8. No se ajusta ningún modelo, transformación, calibrador, capacidad o desempate. Las discrepancias de integridad/especificación bloquean la evaluación; no se corrigen mirando prueba.
+
+Orden: verificar hashes/entorno/modelo/columnas/IDs y separación v3 sin leer objetivos; registrar código y preflight; cargar únicamente los 14 predictores de prueba; ejecutar una llamada predict_proba con fit bloqueado; aplicar apply_frozen_policy con score, ID y mes, nunca y; guardar scores/decisiones y su hash; después leer etiquetas y calcular métricas. Se conservan los cierres y la selección v3 sin filtrar casos por resultados.
+
+La prioridad es top floor(20*n_mes/100), ambos hoteles conjuntamente, sin redondear scores. Empates exactos: SHA256 UTF-8 de `42|ID` ascendente, después ID numérico ascendente. Los cortes de score observados son descriptivos, no umbrales fijos ni parámetros nuevos.
+
+Se informan política (precision/recall/F1 y matriz), ordenación global (ROC-AUC/AP), Brier, prevalencia/probabilidad media, meses, hoteles y composición frente a validación. No se prueban capacidades, modelos o calibraciones alternativos sobre prueba.
+
+Incertidumbre descriptiva: 500 réplicas, seed 42, bootstrap de bloques móviles no circulares de 14 días de llegada. Se agrupan todas las reservas de cada día y ambos hoteles; se muestrean bloques de días consecutivos con reemplazo hasta cubrir tantos días como el periodo original, truncando el último bloque. No se remuestrean filas independientemente. Scores/alertas quedan fijos: no se vuelve a priorizar en cada réplica ni se ajusta el modelo. Por tanto, los porcentajes alertados pueden variar en las réplicas; los intervalos describen métricas condicionadas a las decisiones originales, no una simulación de reaplicar la cuota sobre nuevas cohortes. Se usan percentiles 2,5/97,5; AUC/AP requieren ambas clases.
+
+La longitud de 14 días no se elegirá por el intervalo más favorable. Dependencia de mayor alcance, clientes/grupos sin ID, estacionalidad, solo seis meses y selección previa limitan los supuestos de estacionariedad/intercambiabilidad de bloques: se presentan intervalos de remuestreo ilustrativos, no cobertura frecuentista garantizada ni validación de producción. El fundamento de remuestrear bloques para datos dependientes se contrasta con el artículo de Künsch (1989), [versión del autor](https://www.researchgate.net/publication/2355926_The_Jackknife_and_the_Bootstrap_for_General_Stationary_Observations), DOI 10.1214/aos/1176347265. Aquí la adaptación por días y decisiones fijas es una elección declarada de este análisis.
+
+Los checkpoints impedirán nuevas inferencias al reejecutar el notebook: se verificarán y presentarán los scores congelados. Si un fallo técnico deja un estado sin predicciones completas, se detendrá la repetición automática y se documentará la incidencia. No se abre la fase 10.

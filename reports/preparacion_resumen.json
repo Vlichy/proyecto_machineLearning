@@ -1,0 +1,66 @@
+{
+  "filas_originales": 119390,
+  "filas_conservadas": 119390,
+  "filas_excluidas": 0,
+  "duplicados_adicionales_conservados": 31994,
+  "predictores": [
+    "lead_time",
+    "total_nights",
+    "adults",
+    "children",
+    "babies",
+    "children_missing",
+    "hotel",
+    "arrival_date_month",
+    "meal",
+    "country",
+    "market_segment",
+    "distribution_channel",
+    "reserved_room_type",
+    "customer_type"
+  ],
+  "n_predictores": 14,
+  "objetivo": "is_canceled",
+  "columnas_metadatos": [
+    "meta_row_id",
+    "meta_duplicate_group",
+    "meta_arrival_date",
+    "meta_booking_date_proxy",
+    "meta_label_available_after",
+    "meta_adr_negative",
+    "meta_adr_zero",
+    "meta_zero_nights",
+    "meta_zero_guests",
+    "meta_guests_unknown"
+  ],
+  "columnas_exportadas": 25,
+  "nulos_predictores_sin_imputar": {
+    "children": 4,
+    "country": 488
+  },
+  "indicadores_calidad": {
+    "meta_adr_negative": 1,
+    "meta_adr_zero": 1959,
+    "meta_zero_nights": 715,
+    "meta_zero_guests": 180,
+    "meta_guests_unknown": 4
+  },
+  "sha256_original": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+  "archivo_preparado": "data/processed/hotel_bookings_prepared.csv",
+  "sha256_preparado": "2718ad6c88b52da2914b54e5f6eccb51815a2ff3c59100793c093292f900c60c",
+  "ajuste_transformadores_reales": false,
+  "particiones_creadas": false,
+  "modelos_entrenados": false,
+  "estrategia_temporal": {
+    "estado": "propuesta pendiente de implementar y revisar en fase 4",
+    "ordenacion": "meta_booking_date_proxy; nunca equivale a creación observada",
+    "corte_validacion": "2016-07-01",
+    "corte_prueba": "2017-01-01",
+    "entrenamiento": "proxy < corte_validacion Y label_available_after < corte_validacion",
+    "validacion": "corte_validacion <= proxy < corte_prueba Y label_available_after < corte_prueba",
+    "prueba": "proxy >= corte_prueba; evaluar solo etiquetas maduras en el momento del análisis",
+    "etiquetas": "label_available_after = max(llegada + noches, fecha_estado_final) + 1 día; cota offline no probada como disponibilidad real",
+    "grupos": "mantener fechas iguales juntas; verificar que ninguna huella de duplicados cruce conjuntos",
+    "transformadores": "fit únicamente en entrenamiento; transform en validación/prueba"
+  }
+}

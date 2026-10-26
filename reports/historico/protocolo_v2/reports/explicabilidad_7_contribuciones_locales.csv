@@ -1,0 +1,57 @@
+caso,variable,valor,shap_log_odds
+TP,lead_time,169.0,0.5493685603141785
+TP,total_nights,3.0,0.05118875205516815
+TP,adults,2.0,0.02028101310133934
+TP,children,0.0,-0.013154835440218449
+TP,babies,0.0,0.002511783502995968
+TP,children_missing,0.0,0.0
+TP,hotel,City Hotel,0.22542211413383484
+TP,arrival_date_month,June,-0.10631165653467178
+TP,meal,BB,0.003427312709391117
+TP,country,categoría omitida en ejemplo local,1.2842200994491577
+TP,market_segment,Offline TA/TO,-0.37782350182533264
+TP,distribution_channel,TA/TO,0.055901821702718735
+TP,reserved_room_type,A,0.0011150408536195755
+TP,customer_type,Transient,0.5655078887939453
+TN,lead_time,14.0,-0.8449533581733704
+TN,total_nights,2.0,-0.009853980503976345
+TN,adults,1.0,-0.09579814225435257
+TN,children,2.0,0.4011171758174896
+TN,babies,0.0,-0.0009409798076376319
+TN,children_missing,0.0,0.0
+TN,hotel,City Hotel,0.3400971293449402
+TN,arrival_date_month,August,0.28442367911338806
+TN,meal,BB,-0.021261315792798996
+TN,country,categoría omitida en ejemplo local,-1.2680126428604126
+TN,market_segment,Direct,-0.518143355846405
+TN,distribution_channel,Direct,-0.2466009259223938
+TN,reserved_room_type,A,-0.037076957523822784
+TN,customer_type,Transient,0.3755849003791809
+FP,lead_time,31.0,-0.28399503231048584
+FP,total_nights,4.0,0.0058732228353619576
+FP,adults,1.0,-0.03513863682746887
+FP,children,0.0,-0.011967136524617672
+FP,babies,0.0,0.00207228004001081
+FP,children_missing,0.0,0.0
+FP,hotel,City Hotel,0.19504611194133759
+FP,arrival_date_month,November,-0.04730399325489998
+FP,meal,BB,0.0031783641315996647
+FP,country,categoría omitida en ejemplo local,0.9674604535102844
+FP,market_segment,Corporate,-0.3867005705833435
+FP,distribution_channel,Corporate,-0.1452794224023819
+FP,reserved_room_type,A,-0.015040160156786442
+FP,customer_type,Transient,0.4079413115978241
+FN,lead_time,95.0,0.00016321500879712403
+FN,total_nights,1.0,-0.11399079114198685
+FN,adults,1.0,-0.11995863914489746
+FN,children,0.0,-0.013096846640110016
+FN,babies,0.0,0.002317661652341485
+FN,children_missing,0.0,0.0
+FN,hotel,City Hotel,0.03621489182114601
+FN,arrival_date_month,November,-0.17554102838039398
+FN,meal,BB,-0.0002124076709151268
+FN,country,categoría omitida en ejemplo local,1.060616374015808
+FN,market_segment,Groups,0.4844813942909241
+FN,distribution_channel,TA/TO,0.035511523485183716
+FN,reserved_room_type,A,-0.012679440900683403
+FN,customer_type,Transient-Party,-1.6467698812484741

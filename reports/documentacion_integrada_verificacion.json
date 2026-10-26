@@ -1,0 +1,29 @@
+{
+  "estado": "verificado",
+  "revision": "documentacion_integrada_v1",
+  "archivos_codigo_modificados": 44,
+  "tipos": {
+    "python": 32,
+    "notebook": 10,
+    "javascript": 2
+  },
+  "archivos_administrativos_modificados": 3,
+  "total_archivos_existentes_modificados": 47,
+  "comentarios_nuevos": 454,
+  "celdas_markdown_nuevas": 64,
+  "celdas_codigo_AST_y_tokens_identicos": 64,
+  "salidas_contadores_metadatos_y_celdas_previas_conservados": true,
+  "python_AST_y_tokens_identicos": 32,
+  "javascript_solo_insercion_comentarios": 2,
+  "archivos_previos_fuera_de_revision_intactos": 382,
+  "respaldo_verificado": true,
+  "especificacion_modelo_particiones_datos_scores_y_metricas_intactos": true,
+  "diferencias_funcionales_en_codigo": false,
+  "notebooks_ejecutados": 0,
+  "modelos_entrenados": 0,
+  "predicciones_prueba_recalculadas": 0,
+  "inferencias_totales_registradas_fase9": 1,
+  "recibos_historicos_intactos": true,
+  "auditoria_vigente": "herramientas/auditar_documentacion_integrada.py",
+  "auditorias_SHA_historicas": "Comparar fuentes de la ejecución contra respaldo; no sustituir hashes de origen por los actuales."
+}

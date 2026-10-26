@@ -1,0 +1,20 @@
+{
+  "version": "v1",
+  "estado": "histórico; sus métricas no serán comparables como ranking de modelos con v2",
+  "archivos_sha256": {
+    "particiones_temporales.csv": "0bbb709048a34d2843f856c2fc9e0d129e8408a3f3d5ed474a86716bf2362a4a",
+    "division_temporal.json": "5b33fe8e0f8885d02b412ab2e181620407728e1c771ab3b617f4bf418e13d374",
+    "baseline_resultados.json": "fe3b57c6c870c67b5d2386a228f10883837a4f07947f2300cee9831ae231306b",
+    "baseline_predicciones_validacion.csv": "b5da5e5e4c979d6ffdb85028ac301a288c2476121204a708e3babb9ccda556d4",
+    "baseline_verificacion.json": "692e9a843952ce8b3404eaca7520d78528161b41f43406baa167e9ab73c1808d"
+  },
+  "fuentes_sha256": {
+    "src/splitting.py": "bcbb552a26ddc839336560ce5f7368a4b4ae834113e5ccca120f523bae898436",
+    "src/baseline.py": "05c3fe2e7d36e14dbd26bbd370c29a4c3bb01cc7fb2d4de92f3c0b57be9820f0",
+    "src/audit_baseline.py": "f50ca1190ea3f671d6945885cd322f52015b93afd7960143533a813bb2004384"
+  },
+  "reportes_historicos_conservados": [
+    "reports/fase_4_baseline.md",
+    "reports/fase_4_1_auditoria.md"
+  ]
+}

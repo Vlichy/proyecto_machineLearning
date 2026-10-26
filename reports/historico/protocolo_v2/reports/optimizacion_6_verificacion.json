@@ -1,0 +1,534 @@
+{
+  "protocolo": {
+    "version": "v2_estado_fechado_aproximado",
+    "validation_start": "2016-07-01",
+    "test_start": "2017-01-01",
+    "assumed_as_of_exclusive": "2018-12-01",
+    "accredited_as_of": null,
+    "status_recording_lag_days": 1,
+    "publication_date_reference": "2018-11-29",
+    "as_of_basis": "Supuesto retrospectivo: comienzo del mes siguiente a la publicación; no fecha de extracción ni cierre PMS acreditados.",
+    "availability_rule": "reservation_status_date + 1 día, estrictamente anterior al corte; aproximación, no primera disponibilidad demostrada."
+  },
+  "n_train": 54164,
+  "n_validacion": 18097,
+  "plan": {
+    "protocolo": {
+      "version": "v2_estado_fechado_aproximado",
+      "validation_start": "2016-07-01",
+      "test_start": "2017-01-01",
+      "assumed_as_of_exclusive": "2018-12-01",
+      "accredited_as_of": null,
+      "status_recording_lag_days": 1,
+      "publication_date_reference": "2018-11-29",
+      "as_of_basis": "Supuesto retrospectivo: comienzo del mes siguiente a la publicación; no fecha de extracción ni cierre PMS acreditados.",
+      "availability_rule": "reservation_status_date + 1 día, estrictamente anterior al corte; aproximación, no primera disponibilidad demostrada."
+    },
+    "seed": 42,
+    "folds": [
+      [
+        "2015-10-01",
+        "2016-01-01"
+      ],
+      [
+        "2016-01-01",
+        "2016-04-01"
+      ],
+      [
+        "2016-04-01",
+        "2016-07-01"
+      ]
+    ],
+    "espacios_busqueda": {
+      "xgboost": {
+        "classifier__n_estimators": [
+          200,
+          400
+        ],
+        "classifier__max_depth": [
+          3,
+          5
+        ],
+        "classifier__learning_rate": [
+          0.03,
+          0.08
+        ],
+        "classifier__subsample": [
+          0.8,
+          1.0
+        ],
+        "classifier__colsample_bytree": [
+          0.8,
+          1.0
+        ],
+        "classifier__min_child_weight": [
+          1,
+          10
+        ],
+        "classifier__reg_lambda": [
+          1.0,
+          5.0
+        ]
+      },
+      "lightgbm": {
+        "classifier__n_estimators": [
+          200,
+          400
+        ],
+        "classifier__num_leaves": [
+          15,
+          31
+        ],
+        "classifier__learning_rate": [
+          0.03,
+          0.08
+        ],
+        "classifier__subsample": [
+          0.8,
+          1.0
+        ],
+        "classifier__colsample_bytree": [
+          0.8,
+          1.0
+        ],
+        "classifier__min_child_samples": [
+          20,
+          60
+        ],
+        "classifier__reg_lambda": [
+          0.0,
+          5.0
+        ]
+      }
+    },
+    "muestras_aleatorias_por_modelo": 8,
+    "incluye_referencia_inicial": true,
+    "total_configuraciones_por_modelo": 9,
+    "total_ajustes_cv": 54,
+    "scoring": "media AP no ponderada; desempate ROC-AUC; después índice",
+    "refit_cv": false,
+    "early_stopping": false,
+    "hilos_por_modelo": 4,
+    "busquedas_paralelas": 1,
+    "umbrales_descriptivos": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "calibracion_ajustada": false,
+    "regla_candidato": "Conservar inicial si la seleccionada no mejora simultáneamente AP y ROC-AUC externos; entre familias priorizar ambas, revisar errores, Brier, estabilidad y coste. Sin umbral operativo final."
+  },
+  "busquedas": {
+    "xgboost": {
+      "segundos": 5.593671599999652,
+      "ajustes": 27,
+      "advertencias": [],
+      "parametros_seleccionados": {
+        "classifier__subsample": 0.8,
+        "classifier__reg_lambda": 1.0,
+        "classifier__n_estimators": 200,
+        "classifier__min_child_weight": 10,
+        "classifier__max_depth": 5,
+        "classifier__learning_rate": 0.08,
+        "classifier__colsample_bytree": 0.8
+      },
+      "candidatos_planificados": [
+        {
+          "classifier__n_estimators": 300,
+          "classifier__max_depth": 4,
+          "classifier__learning_rate": 0.05,
+          "classifier__subsample": 0.8,
+          "classifier__colsample_bytree": 0.8,
+          "classifier__min_child_weight": null,
+          "classifier__reg_lambda": null
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 5.0,
+          "classifier__n_estimators": 400,
+          "classifier__min_child_weight": 1,
+          "classifier__max_depth": 5,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 0.8
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 1.0,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_weight": 10,
+          "classifier__max_depth": 3,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 0.8
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 5.0,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_weight": 1,
+          "classifier__max_depth": 5,
+          "classifier__learning_rate": 0.03,
+          "classifier__colsample_bytree": 0.8
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 5.0,
+          "classifier__n_estimators": 400,
+          "classifier__min_child_weight": 10,
+          "classifier__max_depth": 5,
+          "classifier__learning_rate": 0.03,
+          "classifier__colsample_bytree": 0.8
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 5.0,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_weight": 1,
+          "classifier__max_depth": 3,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 1.0
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 1.0,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_weight": 10,
+          "classifier__max_depth": 5,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 0.8
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 1.0,
+          "classifier__n_estimators": 400,
+          "classifier__min_child_weight": 1,
+          "classifier__max_depth": 3,
+          "classifier__learning_rate": 0.03,
+          "classifier__colsample_bytree": 1.0
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 1.0,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_weight": 10,
+          "classifier__max_depth": 3,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 1.0
+        }
+      ]
+    },
+    "lightgbm": {
+      "segundos": 6.94738900000084,
+      "ajustes": 27,
+      "advertencias": [],
+      "parametros_seleccionados": {
+        "classifier__subsample_freq": 1,
+        "classifier__subsample": 0.8,
+        "classifier__reg_lambda": 0.0,
+        "classifier__num_leaves": 15,
+        "classifier__n_estimators": 400,
+        "classifier__min_child_samples": 60,
+        "classifier__learning_rate": 0.08,
+        "classifier__colsample_bytree": 0.8
+      },
+      "candidatos_planificados": [
+        {
+          "classifier__n_estimators": 300,
+          "classifier__num_leaves": 31,
+          "classifier__learning_rate": 0.05,
+          "classifier__subsample": 1.0,
+          "classifier__colsample_bytree": 1.0,
+          "classifier__min_child_samples": 20,
+          "classifier__reg_lambda": 0.0,
+          "classifier__subsample_freq": 0
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 5.0,
+          "classifier__num_leaves": 31,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_samples": 60,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 0.8,
+          "classifier__subsample_freq": 1
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 0.0,
+          "classifier__num_leaves": 15,
+          "classifier__n_estimators": 400,
+          "classifier__min_child_samples": 20,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 0.8,
+          "classifier__subsample_freq": 1
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 5.0,
+          "classifier__num_leaves": 15,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_samples": 60,
+          "classifier__learning_rate": 0.03,
+          "classifier__colsample_bytree": 0.8,
+          "classifier__subsample_freq": 1
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 5.0,
+          "classifier__num_leaves": 31,
+          "classifier__n_estimators": 400,
+          "classifier__min_child_samples": 60,
+          "classifier__learning_rate": 0.03,
+          "classifier__colsample_bytree": 0.8,
+          "classifier__subsample_freq": 1
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 5.0,
+          "classifier__num_leaves": 15,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_samples": 20,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 1.0,
+          "classifier__subsample_freq": 1
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 0.0,
+          "classifier__num_leaves": 15,
+          "classifier__n_estimators": 400,
+          "classifier__min_child_samples": 60,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 0.8,
+          "classifier__subsample_freq": 1
+        },
+        {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 0.0,
+          "classifier__num_leaves": 31,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_samples": 20,
+          "classifier__learning_rate": 0.03,
+          "classifier__colsample_bytree": 1.0,
+          "classifier__subsample_freq": 1
+        },
+        {
+          "classifier__subsample": 0.8,
+          "classifier__reg_lambda": 0.0,
+          "classifier__num_leaves": 15,
+          "classifier__n_estimators": 400,
+          "classifier__min_child_samples": 20,
+          "classifier__learning_rate": 0.08,
+          "classifier__colsample_bytree": 1.0,
+          "classifier__subsample_freq": 1
+        }
+      ]
+    }
+  },
+  "parametros_completos_seleccionados": {
+    "xgboost": {
+      "objective": "binary:logistic",
+      "base_score": null,
+      "booster": null,
+      "callbacks": null,
+      "colsample_bylevel": null,
+      "colsample_bynode": null,
+      "colsample_bytree": 0.8,
+      "device": null,
+      "early_stopping_rounds": null,
+      "enable_categorical": true,
+      "eval_metric": "logloss",
+      "feature_types": null,
+      "feature_weights": null,
+      "gamma": null,
+      "grow_policy": null,
+      "importance_type": null,
+      "interaction_constraints": null,
+      "learning_rate": 0.08,
+      "max_bin": null,
+      "max_cat_threshold": null,
+      "max_cat_to_onehot": null,
+      "max_delta_step": null,
+      "max_depth": 5,
+      "max_leaves": null,
+      "min_child_weight": 10,
+      "missing": "NaN",
+      "monotone_constraints": null,
+      "multi_strategy": null,
+      "n_estimators": 200,
+      "n_jobs": 4,
+      "num_parallel_tree": null,
+      "random_state": 42,
+      "reg_alpha": null,
+      "reg_lambda": 1.0,
+      "sampling_method": null,
+      "scale_pos_weight": null,
+      "subsample": 0.8,
+      "tree_method": "hist",
+      "validate_parameters": null,
+      "verbosity": null
+    },
+    "lightgbm": {
+      "boosting_type": "gbdt",
+      "class_weight": null,
+      "colsample_bytree": 0.8,
+      "importance_type": "split",
+      "learning_rate": 0.08,
+      "max_depth": -1,
+      "min_child_samples": 60,
+      "min_child_weight": 0.001,
+      "min_split_gain": 0.0,
+      "n_estimators": 400,
+      "n_jobs": 4,
+      "num_leaves": 15,
+      "objective": null,
+      "random_state": 42,
+      "reg_alpha": 0.0,
+      "reg_lambda": 0.0,
+      "subsample": 0.8,
+      "subsample_for_bin": 200000,
+      "subsample_freq": 1,
+      "deterministic": true,
+      "force_col_wise": true,
+      "verbosity": -1
+    }
+  },
+  "advertencias_externas": null,
+  "sha_seleccion_antes_evaluacion": "58261bbe71e9e8cf8578d1942b6c3ee9d139c8fb658b56e38cc93a555b6033d5",
+  "archivos_previos_intactos": {
+    "data\\processed\\hotel_bookings_prepared.csv": "2718ad6c88b52da2914b54e5f6eccb51815a2ff3c59100793c093292f900c60c",
+    "data\\raw\\hotel_bookings.csv": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+    "reports\\auditoria_4_1_calibracion_validacion.csv": "2e07654ac75b06af6bb12e577ee7e6bf5220084b883dc5385374f03aa223d8da",
+    "reports\\auditoria_4_1_categorias_nuevas_validacion.csv": "42187438f5937e1925ccd98533f8362567c2cb7c152ea73dd2533d937bb616b7",
+    "reports\\auditoria_4_1_cierres_hipoteticos.csv": "38ee456e055f58ed447d130f5d9f322e2a351b562204bf743b3ed3fc1034e6a2",
+    "reports\\auditoria_4_1_diagnosticos_train_validacion.csv": "8e6ce7e02d191c1c4288cfb944e843bdc7e3ca909cfc14c2e9be7d391b3d23dd",
+    "reports\\auditoria_4_1_distribucion_probabilidades.csv": "b0723c58632f9c6fbe3a6e543fb61d16c395e6114c651386e012ce56eade6759",
+    "reports\\auditoria_4_1_escenarios_coste_relativo.csv": "3427414e2e9c2e264a822de5c8220957a9e7e3d8dfeeff722547e7c4027a7164",
+    "reports\\auditoria_4_1_perfiles_categoricos.csv": "5c7aada317829f4991daf7e5161aeab9d2f2b777c537524363503b6f52edf178",
+    "reports\\auditoria_4_1_perfiles_seleccion.csv": "8a8c71d93e81a75629f601f3e3d26e32c1cd76bd69d0795d9ccd4917a845079a",
+    "reports\\auditoria_4_1_resultados.json": "60e0ef353c5755e80ddf68e614e6edb3ff52c22d7141606ce72e9128836cdba9",
+    "reports\\auditoria_4_1_umbrales_validacion.csv": "5d25bc5ee3ae843940908f973c6f17bfd15d485774742b220db9ffeae588b3c8",
+    "reports\\auditoria_4_1_verificacion.json": "01b647f5a119f4c2bec692fb85320f5d6105b90c8c36e3beeab1ffc923456f27",
+    "reports\\baseline_predicciones_validacion.csv": "b923479cb550961832b51c8166ecfa16d1345292f5650bab3678c02469199bfb",
+    "reports\\baseline_resultados.json": "d821a3d6772f78da8a9d14188c37da0eeac526c583bd98db0f8e29ce816a62a7",
+    "reports\\baseline_verificacion.json": "54fca79590344418cd93fdee4b41122b81c0b134f7428f9a289e0987e44bbef6",
+    "reports\\comparacion_5_metricas.csv": "7bdb41b2bcb925e089062a5d53d30e196f23a0bf424cf02af74e8c8939cc3af6",
+    "reports\\comparacion_5_predicciones_validacion.csv": "1f668616d7e39c8e5eb478c5cf175ec5c72c01e9c9fb2889842a2638f1973ae6",
+    "reports\\comparacion_5_referencia_reproduccion.csv": "47c78ded3b64544b028d0c14d6bc99871f83546b3e7e321a8c1a76d6127f21f3",
+    "reports\\comparacion_5_verificacion.json": "65e4b58fc0d9efb9cf9011b07da6b8f53bb397b42f28764ecfa4077f33370ecd",
+    "reports\\division_temporal.json": "506b92d7d9f2adcaddf5192ab50a5b2df9674b9516744a48ae67664f330417d1",
+    "reports\\eda_auditoria_leakage.csv": "6d891386278cd6b0b2330eefba635ea7bc9d8df1c83daf811bc723c4a2b9c9ba",
+    "reports\\eda_resumen.json": "176d63df132d7279c208ee011cfe3fbc9e8d89a1aa6cd29e48b8e236dcfc04b3",
+    "reports\\eda_verificacion.json": "3ce28cf4858303992e24dbcb39b2c7e4e14bcf3abb8cf9b923593b70fd2289c3",
+    "reports\\estado_protocolo.json": "033c1147e1f2a459ce8ceda120564cfe63e65456ea986fdf8bd15db33575395a",
+    "reports\\fase_1_inspeccion.md": "bfd6f6d58eb61411d46417fd6d916db9e4b5e9a36b22edf02e31501805ac8df7",
+    "reports\\fase_2_eda.md": "b2b0d5ea1a7bcbc072c69e8b9ad8537b9e99c6be45a7bfcc98c181fa37b21207",
+    "reports\\fase_3_preparacion.md": "8ee57b577f10d4c2e9b4e26d4a651035c8f351eb0ce8e9e0759d79a7c216d804",
+    "reports\\fase_4_1_auditoria.md": "5feaf824ea787b3622117a7aa5817e690bb9f6b452b730165ca348f5fbb068b1",
+    "reports\\fase_4_2_protocolo_temporal.md": "3541d2858dfcfa76ef3ba562463c2046ea29855bee902786c7a5d36ab8e6cc4d",
+    "reports\\fase_4_baseline.md": "ac790bd6c98bf6b24b7998899a430eb3a8b3f5fb20e63c7780cb446608531342",
+    "reports\\fase_5_comparacion_modelos.md": "545c644e1e15dc5323a9f999405059b68f21628fcde755eadbab4bdc70459cb6",
+    "reports\\inspeccion_dataset.json": "f89c6b23e95af0912365bd2f2e2d0b29729cc75ead1bddeb5f9f0a8b08aba536",
+    "reports\\particiones_temporales.csv": "cedadccd48504c1a3bcb97efbbbb3983c4b9b3ede5f39bc8e5a5ca7d2c261778",
+    "reports\\preparacion_auditoria_variables.csv": "aa62e4e62bce731972df2deb7105f283b0d0c3dbd7cbd7019246803e2cb976c6",
+    "reports\\preparacion_resumen.json": "d18aa575805e54598fa5bb052836c61dc45977ef1425d23e899cdd407583dd29",
+    "reports\\preparacion_verificacion.json": "c6c89c60777cea68ac92899dd66528c56c8a012cfcd417dd444ff895ce1639a3",
+    "reports\\protocolo_4_2_apartadas_por_mes.csv": "6277f8d2a66785752ffd0dd06b933e20cde412b9aca5f25d431119b2bc0cf9d6",
+    "reports\\protocolo_4_2_comparacion_descriptiva.csv": "dcb890a0f942d8f20f302e4f66f42b1b3847cc8bcafd3942f1bf83b64a9d8d7d",
+    "reports\\protocolo_4_2_config.json": "61366d7cd73dc3fb73805adee2380a7c294e7dfc40f7f0c01e68fa44b774c254",
+    "reports\\protocolo_4_2_fuentes.md": "6e01d970fa641dfdf8fdf867790f22c7dd611eeb3ee130d2c62c2179c794ffbd",
+    "reports\\protocolo_4_2_particiones.csv": "3e7f15fb11d59494016bb8a7b097b91b18858c7e1ef0648057e4ae7dd0c20edd",
+    "reports\\protocolo_4_2_reincorporadas_perfil.csv": "e14dc98b35863402df7c484f0845f48cf1865cc9fc223e60d8c031931048a416",
+    "reports\\protocolo_4_2_transicion.csv": "c1ce40e5710b31c88d089d5f91ed0f17f05a02b5a19f728858b23fc1f4abc0f1",
+    "reports\\protocolo_4_2_verificacion.json": "54fca79590344418cd93fdee4b41122b81c0b134f7428f9a289e0987e44bbef6",
+    "reports\\verificacion_referencias.json": "0c0ed2c81fa4d49f314121dcea04094efc52acdac7df21791e9400c799f5aff1",
+    "reports\\figures\\01_ausencias.png": "7944a583b51df877425cbed85c1b79386781aad8332ec2943ce9cdf9efb79b49",
+    "reports\\figures\\02_objetivo_hoteles.png": "88e5aded3b970d1a3155d8b424f39af12c9f9fa993dcc7606ddbe8dfe20c080e",
+    "reports\\figures\\03_antelacion_adr.png": "8fa26cadee6b044d6aaa13458785dbb4c6faa791b756e81cd7f3a981f299e3b4",
+    "reports\\figures\\04_tasas_antelacion.png": "d8d31647243caae409a239fab56b82519690e4ba695e01759fc3bcdf34aea60d",
+    "reports\\figures\\05_customer_type.png": "95f66ebbb0559255e5305d5217f5d832290b6fc7ccabe0b44624e516cbd8a391",
+    "reports\\figures\\05_deposit_type.png": "8a290ceb7e7d4c739600e386571ca6e1370f54a32d6108dc4d886d4fa871c588",
+    "reports\\figures\\05_distribution_channel.png": "530b4d08197b0c12af3f5ed8e1ba53953ea18379cad706eaa227fbdd79b7e01d",
+    "reports\\figures\\05_market_segment.png": "e7d21d4a0233825ca8a88df1582a224059e32adc9fb9d227b49c94044b71d2a7",
+    "reports\\figures\\06_historial_solicitudes.png": "d8c169fabe2eb94356eafb98d145495b43cdc27b721a96a51648244d958b9270",
+    "reports\\figures\\07_estancia_huespedes.png": "de1450e08043d9cb1f95020548fff1b8caa26e9d22a44e3a46242792ff224c39",
+    "reports\\figures\\08_evolucion_temporal.png": "fff32f5fd46b61c03d5e5e997523f552e9fa3d34dd8820d934fcadd47e6a5902",
+    "reports\\figures\\09_estacionalidad.png": "b2ed8b53e7d3b1a0a83ca7e217a592528f9ee790370730c6db1cb5cf65d1eeaa",
+    "reports\\figures\\10_correlaciones.png": "fc88d822d224c090e8fb12ae5c583a231cf78e389a662edc2a6a4be30e24be5b",
+    "reports\\figures\\auditoria_4_1_01_sesgo_antelacion.png": "0cf3df9531000c4a119b49f9af26c5a6cb42db96d3ed38d55f2d1d14737db5f9",
+    "reports\\figures\\auditoria_4_1_02_distribucion_probabilidades.png": "b9e5d2193d4548cfc26acf491225d0e021cf6a21412c77be39044ec9e8b00f26",
+    "reports\\figures\\auditoria_4_1_03_calibracion_validacion.png": "019756a7b7283e8ea809da18add09c72d7b56e39cd2fe25bd8727955cbed52bb",
+    "reports\\figures\\auditoria_4_1_04_precision_recall_umbrales.png": "594179bd17315fd4094445ba631cb003a551a10b301db8863c37833c3fbc8b4f",
+    "reports\\figures\\baseline_01_particiones.png": "ff959839d025cd7002994f409aa99f41a239fd30f7faa3007eb6cab9099f4b96",
+    "reports\\figures\\baseline_02_confusion_validacion.png": "2983f7af1fad9dc64bc164996fb45902134d95836ce822e35e94886dd4d20214",
+    "reports\\figures\\baseline_03_roc_validacion.png": "e73746da2350618b27f22a30b9a2c440041a9b3f7f07f980068fc3dc0a645a03",
+    "reports\\figures\\comparacion_5_curvas.png": "611bcff289cffb8cbd9353579dc5be61ecd9ad272bf154eabf5b79b79146661a",
+    "reports\\figures\\comparacion_5_matrices.png": "51de0dee6f74d1be742c965b9a8fd2b5214965920fdc066914ac55f771ef2a3f",
+    "reports\\figures\\comparacion_5_metricas.png": "5aa722f8f3d0a45dba27829111af5351dac369f756d8c81cadd8ce81644bbf86",
+    "reports\\figures\\protocolo_4_2_confusion_validacion.png": "a2bc12484adce21eaa91e5a6a1b3fa005b7853df44b1e4f91b4d702301b4b5ab",
+    "reports\\figures\\protocolo_4_2_reincorporacion.png": "d94df3e0995079b5895f1d2a3f9464128ff9e1f8d30216d5d7b1ad8e4a30ad44",
+    "reports\\historico\\protocolo_v1\\baseline_predicciones_validacion.csv": "b5da5e5e4c979d6ffdb85028ac301a288c2476121204a708e3babb9ccda556d4",
+    "reports\\historico\\protocolo_v1\\baseline_resultados.json": "fe3b57c6c870c67b5d2386a228f10883837a4f07947f2300cee9831ae231306b",
+    "reports\\historico\\protocolo_v1\\baseline_verificacion.json": "692e9a843952ce8b3404eaca7520d78528161b41f43406baa167e9ab73c1808d",
+    "reports\\historico\\protocolo_v1\\division_temporal.json": "5b33fe8e0f8885d02b412ab2e181620407728e1c771ab3b617f4bf418e13d374",
+    "reports\\historico\\protocolo_v1\\particiones_temporales.csv": "0bbb709048a34d2843f856c2fc9e0d129e8408a3f3d5ed474a86716bf2362a4a",
+    "reports\\historico\\protocolo_v1\\README.md": "fd5cdd32f61d372681be44dcfe143e1018362bc7a9a162504044a34a3311f965",
+    "reports\\historico\\protocolo_v1\\registro_historico.json": "bb83cffe58359f9b223630c976ae3e30b8db7ae738adce05440414cfc9fff713",
+    "src\\splitting.py": "f15a925b930c873089a83aff15f79098935aa8875f95a06d9e89498bacbc3785",
+    "src\\features.py": "c150d2ef7a93d2aba990a926cda1eca746e48011764e4dab8ad60ed3cc620213",
+    "src\\preprocessing.py": "2877c53e7cefd7d673b4b46500df54ad888c1242af0a783ddd692f45532bae67",
+    "src\\baseline.py": "508694e2edc55d9cdf83e7fdae191a945c0ef59f5cae83dec0f03ed685783f42",
+    "src\\comparison.py": "72d58e7add366e5e509fc6a821a6685eaf1f1891e295c55cc29f8ccb93f992b1"
+  },
+  "auditorias_fit_cv": 54,
+  "predicciones_externas_nuevas_por_modelo": 1,
+  "prueba_transformada_predicha_evaluada": false,
+  "brier_constante_tasa_train": 0.24488119316862128,
+  "versiones": {
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3"
+  },
+  "recuperacion": {
+    "motivo": "NaN en default missing de XGBoost al exportar verificacion final; tablas, scores y figuras ya guardados",
+    "nuevos_ajustes_por_recuperacion": 0,
+    "nuevas_predicciones_externas_por_recuperacion": 0,
+    "advertencias_externas_no_recuperables": true,
+    "hashes_previos_comprobados_antes_del_fallo": true
+  },
+  "candidato_principal": "xgboost_inicial_fase_5",
+  "umbral_operativo_definitivo": null,
+  "calibrador_ajustado": false,
+  "huellas_resultados": {
+    "reports\\optimizacion_6_busqueda.csv": "0200d393637fee2924cf79351318b2019aff2077f44f337f24ac12e641a04fad",
+    "reports\\optimizacion_6_calibracion.csv": "510ab20626192e8a12fe8ff37a479c3d62661514ba9ae79f1b60328cc31f04f1",
+    "reports\\optimizacion_6_calibracion_bins.csv": "20aec08d33019233733f218f0ebb977d227563a8af80629e62e33cbf0433358b",
+    "reports\\optimizacion_6_escenarios.csv": "7fd47c800397941b127c6ca4411a96dcf4d705ebdab48810bbd639e9fc13344e",
+    "reports\\optimizacion_6_estabilidad_mensual.csv": "baed84efac99954c7551030aaae2ff2c3cd02c65257f45013b950678cdfc95ef",
+    "reports\\optimizacion_6_folds.csv": "3c0ee5735f0cd453ae95fd75dead66f65cf100b822bd653c5d7be2fed8e1a135",
+    "reports\\optimizacion_6_ids_folds.csv": "9f246d9e36b75ca29ff9f642aa2a5a6590ed4b5b8b1e0092ff45c8813fdfa719",
+    "reports\\optimizacion_6_metricas.csv": "f81df0106cf7fdb4c5d169c399c8aca31cee67a234f2d451fb4d1927cc06998b",
+    "reports\\optimizacion_6_plan.json": "4cbd6937ea9ff49e343fadfefbe3c5f1bc83fa97f52299897586dc007f9a1ac3",
+    "reports\\optimizacion_6_predicciones_validacion.csv": "b44d29d914cca3320cffdc6e785e12708e89da222e3aab3ba5efcc8bda2ea518",
+    "reports\\optimizacion_6_seleccion_prevalidacion.json": "58261bbe71e9e8cf8578d1942b6c3ee9d139c8fb658b56e38cc93a555b6033d5",
+    "reports\\optimizacion_6_umbrales.csv": "d09536788c45d43a6af6d4daba8ab6b11f6f4ee516ceb3a5ff44ebd35a4bafde"
+  },
+  "pruebas_superadas": 26,
+  "notebook_ejecutado_completo_sin_errores": true,
+  "graficos_revisados": 3,
+  "notebook_sha256": "c55bc6bf16e3cfeb294a0e5018854b2c450de86365dec417bdb65dc086872567",
+  "fuente_sha256": "6e93ae31d0ef7d4f2da731087f08f2835804885b936bda815161abd53ff1b0c7",
+  "reproduccion_analisis_congelado": true,
+  "reconstruccion_folds_ids_exacta": true,
+  "verificacion_predicciones_solo_ids_validacion": true,
+  "referencias_anteriores_intactas": 105,
+  "probabilidades_nuevas_xgboost_dtype": "float32 restaurado al leer CSV",
+  "informe_sha256": "67a852b46d8b7f95b8ff06146c959273006685ab0398319951b2f83021e0adad"
+}

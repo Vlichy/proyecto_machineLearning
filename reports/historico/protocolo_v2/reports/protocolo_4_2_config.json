@@ -1,0 +1,14 @@
+{
+  "version": "v2_estado_fechado_aproximado",
+  "validation_start": "2016-07-01",
+  "test_start": "2017-01-01",
+  "assumed_as_of_exclusive": "2018-12-01",
+  "accredited_as_of": null,
+  "status_recording_lag_days": 1,
+  "publication_date_reference": "2018-11-29",
+  "as_of_basis": "Supuesto retrospectivo: comienzo del mes siguiente a la publicación; no fecha de extracción ni cierre PMS acreditados.",
+  "availability_rule": "reservation_status_date + 1 día, estrictamente anterior al corte; aproximación, no primera disponibilidad demostrada.",
+  "fuente_primaria": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6297060/",
+  "eleccion": "Antes de entrenar; sin métricas de prueba.",
+  "estado": "Protocolo aproximado de fechas registradas; no certifica predicción al crear la reserva."
+}

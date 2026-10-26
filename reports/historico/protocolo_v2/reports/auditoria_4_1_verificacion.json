@@ -1,0 +1,18 @@
+{
+  "tests_ejecutados": 12,
+  "tests_fallidos": 0,
+  "auditoria_ejecutada_sin_errores": true,
+  "probabilidades_validacion_reproducidas": 1.1102230246251565e-16,
+  "tabla_umbrales_recalculada_solo_desde_predicciones_guardadas_validacion": true,
+  "bandas_calibracion_y_escenarios_verificados": true,
+  "figuras_png_verificadas_y_revisadas_visualmente": 4,
+  "archivos_previos_sin_cambios_verificados": 47,
+  "referencias_previas_sin_cambios": 105,
+  "prueba_usada_solo_para_auditoria_de_fechas": true,
+  "particiones_modelo_y_umbral_originales_sin_modificar": true,
+  "fit_auditoria": "Reproducción del mismo baseline solo en 48428 filas originales de entrenamiento; sin nuevos algoritmos, sin datos de prueba.",
+  "fase_5_iniciada": false,
+  "correccion_propuesta_no_aplicada": true,
+  "sha256_script": "f50ca1190ea3f671d6945885cd322f52015b93afd7960143533a813bb2004384",
+  "sha256_informe": "5feaf824ea787b3622117a7aa5817e690bb9f6b452b730165ca348f5fbb068b1"
+}

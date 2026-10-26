@@ -1,0 +1,14 @@
+variables,clasificacion,justificacion
+is_canceled,Objetivo; nunca predictor,Etiqueta que se quiere predecir.
+reservation_status,No utilizable,"Estado final: revela cancelación, check-out o no-show."
+reservation_status_date,No utilizable,Fecha del último estado; incorpora desenlace/actualizaciones.
+assigned_room_type,Verificar disponibilidad,Puede asignarse inicialmente o cambiar cerca de llegada; solo sería válido un valor inicial acreditado.
+booking_changes,Verificar; alto riesgo,El total final de cambios aún no existe al crear la reserva; distinguir valor inicial de acumulado final.
+days_in_waiting_list,Verificar instante de predicción,Al entrar en espera no se conoce la espera futura; al confirmar podría conocerse la espera transcurrida.
+deposit_type,Verificar disponibilidad,La política podría fijarse al reservar; acreditar que no sea un estado/política posterior. Asociación extrema no prueba fuga.
+adr,Verificar disponibilidad,Precio inicial puede conocerse; un promedio final puede reflejar modificaciones.
+"required_car_parking_spaces, total_of_special_requests",Verificar disponibilidad,Peticiones iniciales frente a totales actualizados posteriormente.
+"previous_cancellations, previous_bookings_not_canceled, is_repeated_guest",Verificar historial,"Solo hechos conocidos antes de esta reserva, sin su resultado ni reservas futuras."
+"hotel, lead_time, arrival_date_*",Potencialmente utilizables,"Hotel y calendario previsto inicial, sin recalcular tras modificaciones."
+"stays_in_weekend_nights, stays_in_week_nights, adults, children, babies",Potencialmente utilizables,Plan de estancia y composición declarados al reservar; comprobar versión inicial.
+"meal, country, market_segment, distribution_channel, reserved_room_type, customer_type, agent, company",Potencialmente utilizables,Datos comerciales/origen de la reserva inicial; verificar semántica y recodificaciones.

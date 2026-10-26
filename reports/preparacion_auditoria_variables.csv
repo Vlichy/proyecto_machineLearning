@@ -1,0 +1,33 @@
+variable,disponibilidad,decision,justificacion
+hotel,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+is_canceled,No disponible (objetivo futuro),Etiqueta separada,No es una característica.
+lead_time,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+arrival_date_year,Disponible en la operación inicial (supuesto de trabajo),Excluir de X; calendario para auditoría o redundante,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+arrival_date_month,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+arrival_date_week_number,Disponible en la operación inicial (supuesto de trabajo),Excluir de X; calendario para auditoría o redundante,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+arrival_date_day_of_month,Disponible en la operación inicial (supuesto de trabajo),Excluir de X; calendario para auditoría o redundante,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+stays_in_weekend_nights,Disponible en la operación inicial (supuesto de trabajo),Sustituir por total_nights en X,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+stays_in_week_nights,Disponible en la operación inicial (supuesto de trabajo),Sustituir por total_nights en X,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+adults,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+children,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+babies,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+meal,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+country,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+market_segment,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+distribution_channel,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+is_repeated_guest,Incierta,Excluir de X por incertidumbre,No se acredita versión histórica disponible al reservar.
+previous_cancellations,Incierta,Excluir de X por incertidumbre,No hay documentación del instante de cómputo del historial.
+previous_bookings_not_canceled,Incierta,Excluir de X por incertidumbre,No hay documentación del instante de cómputo del historial.
+reserved_room_type,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+assigned_room_type,Incierta,Excluir de X por incertidumbre,Asignación inicial o posterior no distinguible.
+booking_changes,Incierta,Excluir de X por incertidumbre,Total acumulado; no se observa su valor en la creación.
+deposit_type,Incierta,Excluir de X por incertidumbre,"Puede ser política inicial válida, pero no se acredita su versión inicial."
+agent,Incierta,Excluir de X por incertidumbre,ID comercial posiblemente inicial; sin prueba de versión ni significado de ausencias.
+company,Incierta,Excluir de X por incertidumbre,ID comercial posiblemente inicial; sin prueba de versión ni significado de ausencias.
+days_in_waiting_list,Incierta,Excluir de X por incertidumbre,La espera conocida depende de pre-reserva frente a confirmación.
+customer_type,Disponible en la operación inicial (supuesto de trabajo),Incluir en X bajo supuesto explícito,Dato del plan de reserva/origen; el archivo no permite certificar su versión inicial.
+adr,Incierta,Excluir de X por incertidumbre,Podría ser tarifa inicial o promedio actualizado; no se acredita snapshot inicial.
+required_car_parking_spaces,Incierta,Excluir de X por incertidumbre,No se acredita si es petición inicial o posterior.
+total_of_special_requests,Incierta,Excluir de X por incertidumbre,Solicitudes potencialmente añadidas tras reservar.
+reservation_status,No disponible,Excluir de X,Estado final: revela el desenlace.
+reservation_status_date,No disponible,Excluir de X,"Última actualización del estado final, no creación."

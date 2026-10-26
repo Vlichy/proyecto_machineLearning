@@ -1,0 +1,11 @@
+{
+  "vigente": "v3_cohortes_llegada_retrospectivo",
+  "fase": "7.1",
+  "manifiesto": "reports/particiones_temporales.csv",
+  "metricas_vigentes": "reports/protocolo_7_1_modelos.json",
+  "historico_v1": "reports/historico/protocolo_v1",
+  "historico_v2": "reports/historico/protocolo_v2",
+  "metricas_v2_historicas_no_comparables_con_v3": true,
+  "prueba_evaluada": false,
+  "uso_admisible": "Evaluación retrospectiva exploratoria por llegadas; no simulación al alta ni holdout virgen."
+}

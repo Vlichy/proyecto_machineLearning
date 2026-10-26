@@ -1,0 +1,23 @@
+{
+  "estado": "verificado",
+  "llamadas_predict_proba_total": 1,
+  "reentrenamientos": 0,
+  "recalibraciones": 0,
+  "archivos_previos_inmutables": 294,
+  "resultados_congelados_verificados": 14,
+  "politica_determinista_y_cupos_exactos": true,
+  "metricas_recalculadas_desde_scores_guardados": true,
+  "replicas_guardadas": 500,
+  "tests_notebook": 12,
+  "graficos_revisados_visualmente": 2,
+  "reproduccion_notebook_sin_nuevas_predicciones": true,
+  "historicos_v1_v2_inmutables": true,
+  "especificacion_sha256": "e9ad0d974e4bfc4a7f377a1b3a5163468f87a8441a7dd23bd978e9d2b65721c6",
+  "modelo_sha256": "460183467c6c0d783e8e05efe4b560ffce61aadf16fe272e4205b9f615b7867a",
+  "archivos_sha256": {
+    "src\\final_evaluation.py": "87b28722e8926466734f958a42fac46a71d797244f74c762437e6ba5f116f080",
+    "src\\evaluation_narrative.py": "87c57c1b7e803c97fe82d9092f8730f99176151c973463f3f66907304c2c2840",
+    "notebooks\\evaluacion_final.ipynb": "d042cd55813d444f1868aaae5a30826d5ecd83d2441267c4fd39391a97960bf1",
+    "reports\\fase_9_evaluacion_final.md": "3ddf68e8430b6f908cadd3a31b72b1bc5f9f6803e93959a726b4e698325a0890"
+  }
+}

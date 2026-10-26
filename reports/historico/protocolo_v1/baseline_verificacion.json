@@ -1,0 +1,44 @@
+{
+  "tests": 9,
+  "fallos": 0,
+  "errores": 0,
+  "csv_original_intacto": true,
+  "csv_preparado_intacto": true,
+  "notebook_preparacion_intacto": true,
+  "referencias_sin_cambios": 105,
+  "referencias_no_disponibles": 0,
+  "estadisticas_solo_entrenamiento": true,
+  "test_solo_auditoria_y_transform": true,
+  "predicciones_test_generadas": false,
+  "metricas_test_calculadas": false,
+  "umbral_fijado": 0.5,
+  "busqueda_hiperparametros": false,
+  "modelos": [
+    "DummyClassifier(most_frequent)",
+    "LogisticRegression"
+  ],
+  "cwd_ejecucion": "notebooks",
+  "versiones": {
+    "python": "3.14.5",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.0",
+    "seaborn": "0.13.2",
+    "nbclient": "0.11.0"
+  },
+  "celdas_notebook": 13,
+  "celdas_codigo_ejecutadas": 6,
+  "graficos_incorporados": 3,
+  "errores_notebook": 0,
+  "stderr_celdas": [],
+  "rutas_ejecutadas": [
+    "raiz del proyecto",
+    "notebooks/"
+  ],
+  "metricas_recalculadas_desde_csv": true,
+  "predicciones_solo_ids_validacion": true,
+  "reproduccion_misma_matriz_y_parametros": true,
+  "figuras_revisadas_visualmente": 3,
+  "sha256_notebook": "b5288ce029bc7125ae1827b42aea0aea92e52ab55fbd3f4e525cd1e56d6bf796"
+}

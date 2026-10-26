@@ -1,0 +1,235 @@
+{
+  "protocolo": {
+    "version": "v2_estado_fechado_aproximado",
+    "validation_start": "2016-07-01",
+    "test_start": "2017-01-01",
+    "assumed_as_of_exclusive": "2018-12-01",
+    "accredited_as_of": null,
+    "status_recording_lag_days": 1,
+    "publication_date_reference": "2018-11-29",
+    "as_of_basis": "Supuesto retrospectivo: comienzo del mes siguiente a la publicación; no fecha de extracción ni cierre PMS acreditados.",
+    "availability_rule": "reservation_status_date + 1 día, estrictamente anterior al corte; aproximación, no primera disponibilidad demostrada."
+  },
+  "fuente_primaria": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6297060/",
+  "fechas_observadas": {
+    "ultima_llegada": "2017-08-31",
+    "max_fecha_estado": "2017-09-14",
+    "max_proxy_disponibilidad": "2017-09-15"
+  },
+  "cierre_asumido": "2018-12-01",
+  "cierre_acreditado": null,
+  "madurez_real_garantizada": false,
+  "particiones": [
+    {
+      "particion": "entrenamiento",
+      "registros": 54164,
+      "no_canceladas": 31090,
+      "canceladas": 23074,
+      "tasa_cancelacion": 0.42600251089284397,
+      "lead_time_mediana": 68.0,
+      "proxy_min": "2013-06-24",
+      "proxy_max": "2016-06-29",
+      "llegada_min": "2015-07-01",
+      "llegada_max": "2017-05-31",
+      "disponibilidad_proxy_min": "2014-10-18",
+      "disponibilidad_proxy_max": "2016-06-30"
+    },
+    {
+      "particion": "validacion",
+      "registros": 18097,
+      "no_canceladas": 10344,
+      "canceladas": 7753,
+      "tasa_cancelacion": 0.4284135492070509,
+      "lead_time_mediana": 37.0,
+      "proxy_min": "2016-07-01",
+      "proxy_max": "2016-12-30",
+      "llegada_min": "2016-07-01",
+      "llegada_max": "2017-08-28",
+      "disponibilidad_proxy_min": "2016-07-02",
+      "disponibilidad_proxy_max": "2016-12-31"
+    },
+    {
+      "particion": "prueba_reservada",
+      "registros": 26565,
+      "no_canceladas": 18163,
+      "canceladas": 8402,
+      "tasa_cancelacion": 0.3162808206286467,
+      "lead_time_mediana": 40.0,
+      "proxy_min": "2017-01-01",
+      "proxy_max": "2017-08-31",
+      "llegada_min": "2017-01-01",
+      "llegada_max": "2017-08-31",
+      "disponibilidad_proxy_min": "2017-01-02",
+      "disponibilidad_proxy_max": "2017-09-15"
+    },
+    {
+      "particion": "no_madura_entrenamiento",
+      "registros": 12089,
+      "no_canceladas": 9346,
+      "canceladas": 2743,
+      "tasa_cancelacion": 0.22690048804698487,
+      "lead_time_mediana": 185.0,
+      "proxy_min": "2015-02-20",
+      "proxy_max": "2016-06-30",
+      "llegada_min": "2016-06-14",
+      "llegada_max": "2017-08-29",
+      "disponibilidad_proxy_min": "2016-07-01",
+      "disponibilidad_proxy_max": "2017-08-31"
+    },
+    {
+      "particion": "no_madura_validacion",
+      "registros": 8475,
+      "no_canceladas": 6223,
+      "canceladas": 2252,
+      "tasa_cancelacion": 0.2657227138643068,
+      "lead_time_mediana": 163.0,
+      "proxy_min": "2016-07-01",
+      "proxy_max": "2016-12-31",
+      "llegada_min": "2016-12-13",
+      "llegada_max": "2017-08-31",
+      "disponibilidad_proxy_min": "2017-01-01",
+      "disponibilidad_proxy_max": "2017-09-11"
+    },
+    {
+      "particion": "no_madura_prueba",
+      "registros": 0,
+      "no_canceladas": 0,
+      "canceladas": 0,
+      "tasa_cancelacion": null,
+      "lead_time_mediana": null,
+      "proxy_min": null,
+      "proxy_max": null,
+      "llegada_min": null,
+      "llegada_max": null,
+      "disponibilidad_proxy_min": null,
+      "disponibilidad_proxy_max": null
+    }
+  ],
+  "perfiles_v1_para_comparacion": [
+    {
+      "grupo": "entrenamiento",
+      "registros": 48428,
+      "tasa_cancelacion": 0.3580573222102916,
+      "lead_time_media": 88.29534566779549,
+      "lead_time_mediana": 55.0,
+      "lead_time_p90": 256.0,
+      "noches_media": 3.2310440241182787,
+      "fraccion_city": 0.6436772115305195,
+      "estado_final_fechado_antes_corte": 48428
+    },
+    {
+      "grupo": "no_madura_entrenamiento",
+      "registros": 17825,
+      "tasa_cancelacion": 0.4755680224403927,
+      "lead_time_media": 226.88712482468443,
+      "lead_time_mediana": 200.0,
+      "lead_time_p90": 407.0,
+      "noches_media": 4.012061711079944,
+      "fraccion_city": 0.7141654978962132,
+      "estado_final_fechado_antes_corte": 5868
+    },
+    {
+      "grupo": "validacion",
+      "registros": 14011,
+      "tasa_cancelacion": 0.2617229319820141,
+      "lead_time_media": 32.79773035472129,
+      "lead_time_mediana": 24.0,
+      "lead_time_p90": 80.0,
+      "noches_media": 2.8437656127328528,
+      "fraccion_city": 0.6689030047819571,
+      "estado_final_fechado_antes_corte": 14011
+    },
+    {
+      "grupo": "no_madura_validacion",
+      "registros": 12561,
+      "tasa_cancelacion": 0.5045776610142505,
+      "lead_time_media": 161.70169572486267,
+      "lead_time_mediana": 161.0,
+      "lead_time_p90": 277.0,
+      "noches_media": 4.249104370671125,
+      "fraccion_city": 0.6768569381418676,
+      "estado_final_fechado_antes_corte": 4157
+    }
+  ],
+  "antes_apartadas": 30386,
+  "reincorporadas": 9822,
+  "proporcion_reincorporada": 0.3232409662344501,
+  "pendientes_v2": 20564,
+  "perfil_reincorporadas": [
+    {
+      "destino": "entrenamiento",
+      "reincorporadas": 5736,
+      "canceladas": 5734,
+      "no_canceladas": 2,
+      "lead_time_mediana": 250.0
+    },
+    {
+      "destino": "validacion",
+      "reincorporadas": 4086,
+      "canceladas": 4086,
+      "no_canceladas": 0,
+      "lead_time_mediana": 158.0
+    }
+  ],
+  "sin_solapamientos": true,
+  "sin_grupos_compartidos": true,
+  "prueba_mismos_ids_v1": true,
+  "cobertura_total": 119390,
+  "cortes_fijados_antes_de_metricas": true,
+  "metricas_v1_obsoletas_para_comparacion_actual": true,
+  "sha256_original": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+  "sha256_preparado": "2718ad6c88b52da2914b54e5f6eccb51815a2ff3c59100793c093292f900c60c",
+  "meses_entrenamiento_por_hotel": {
+    "City Hotel": {
+      "1": 1458,
+      "2": 2453,
+      "3": 3148,
+      "4": 3665,
+      "5": 3725,
+      "6": 3656,
+      "7": 2236,
+      "8": 3220,
+      "9": 4300,
+      "10": 4087,
+      "11": 1748,
+      "12": 1922
+    },
+    "Resort Hotel": {
+      "1": 888,
+      "2": 1521,
+      "3": 1789,
+      "4": 1867,
+      "5": 1855,
+      "6": 1150,
+      "7": 1742,
+      "8": 1748,
+      "9": 1822,
+      "10": 1749,
+      "11": 1115,
+      "12": 1300
+    }
+  },
+  "sensibilidad_cierre_solo_metadatos": [
+    {
+      "corte_exclusivo_escenario": "2017-09-01",
+      "cumplen_proxy": 26129,
+      "no_cumplen_proxy": 436,
+      "acreditado": false,
+      "seleccionado": false
+    },
+    {
+      "corte_exclusivo_escenario": "2017-09-15",
+      "cumplen_proxy": 26563,
+      "no_cumplen_proxy": 2,
+      "acreditado": false,
+      "seleccionado": false
+    },
+    {
+      "corte_exclusivo_escenario": "2018-12-01",
+      "cumplen_proxy": 26565,
+      "no_cumplen_proxy": 0,
+      "acreditado": false,
+      "seleccionado": true
+    }
+  ]
+}

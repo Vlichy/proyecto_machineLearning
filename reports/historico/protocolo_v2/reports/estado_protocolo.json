@@ -1,0 +1,10 @@
+{
+  "vigente": "v2_estado_fechado_aproximado",
+  "fase": "4.2",
+  "manifiesto": "reports/particiones_temporales.csv",
+  "metricas_vigentes": "reports/baseline_resultados.json",
+  "historico": "reports/historico/protocolo_v1/",
+  "metricas_fases_4_y_4_1_obsoletas_para_comparar_modelos": true,
+  "fase_5_iniciada": false,
+  "uso_admisible": "Comparación académica exploratoria bajo supuestos; no validación estricta al crear la reserva."
+}

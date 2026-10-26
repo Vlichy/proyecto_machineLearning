@@ -1,0 +1,11 @@
+destino_v3,origen_v2,n
+prueba_reservada,entrenamiento,319
+prueba_reservada,no_madura_entrenamiento,1382
+prueba_reservada,validacion,2718
+prueba_reservada,no_madura_validacion,6053
+prueba_reservada,prueba_reservada,22357
+embargo_validacion_prueba,entrenamiento,181
+embargo_validacion_prueba,no_madura_entrenamiento,184
+embargo_validacion_prueba,validacion,1199
+embargo_validacion_prueba,no_madura_validacion,2086
+embargo_validacion_prueba,prueba_reservada,4208

@@ -1,0 +1,24 @@
+{
+  "celdas": 29,
+  "celdas_codigo_ejecutadas": 14,
+  "errores": 0,
+  "graficos_incorporados": 13,
+  "png_verificados": 13,
+  "ejecuciones_completas": [
+    "raiz del proyecto",
+    "notebooks/"
+  ],
+  "ultima_ejecucion": "raiz del proyecto",
+  "dataset_sha256": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+  "referencias_sin_cambios": 105,
+  "data_processed_vacio": true,
+  "advertencias_en_celdas": [],
+  "notebook_sha256": "401e3cafa2ea66c2baab972f777791f0cd11a45953bacd1cf2d49560233848ac",
+  "revision_visual": "Lámina conjunta de los 13 gráficos y revisión individual de correlaciones y antelación/ADR: etiquetas legibles, sin recortes relevantes.",
+  "mantenimiento_fase_3": {
+    "cambio": "Celda final admite archivos preparados preexistentes; salidas históricas intactas.",
+    "eda_completo_reejecutado": false,
+    "validacion_modificacion": "Sintaxis; integridad actual verificada en preparación.",
+    "sha256_notebook_actual": "795f15aa3ee03b538dffff01cc537f41486034aa9b5c404acf5475f0bade66a3"
+  }
+}

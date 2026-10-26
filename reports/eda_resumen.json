@@ -1,0 +1,917 @@
+{
+  "filas": 119390,
+  "columnas": 32,
+  "sha256_csv": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+  "nulos": [
+    {
+      "variable": "company",
+      "nulos": 112593,
+      "porcentaje": 94.30689337465449
+    },
+    {
+      "variable": "agent",
+      "nulos": 16340,
+      "porcentaje": 13.686238378423655
+    },
+    {
+      "variable": "country",
+      "nulos": 488,
+      "porcentaje": 0.40874445095904177
+    },
+    {
+      "variable": "children",
+      "nulos": 4,
+      "porcentaje": 0.003350364352123293
+    }
+  ],
+  "duplicados_adicionales": 31994,
+  "duplicados_grupo": 40165,
+  "anomalias": [
+    {
+      "comprobacion": "ADR negativo",
+      "registros": 1,
+      "porcentaje": 0.0008375910880308234
+    },
+    {
+      "comprobacion": "ADR cero (puede ser válido)",
+      "registros": 1959,
+      "porcentaje": 1.640840941452383
+    },
+    {
+      "comprobacion": "Cero noches",
+      "registros": 715,
+      "porcentaje": 0.5988776279420387
+    },
+    {
+      "comprobacion": "Cero huéspedes conocidos",
+      "registros": 180,
+      "porcentaje": 0.1507663958455482
+    },
+    {
+      "comprobacion": "Huéspedes desconocidos",
+      "registros": 4,
+      "porcentaje": 0.0033503643521232934
+    },
+    {
+      "comprobacion": "Más de 10 huéspedes (revisar)",
+      "registros": 14,
+      "porcentaje": 0.011726275232431527
+    },
+    {
+      "comprobacion": "Conteos/antelación negativos",
+      "registros": 0,
+      "porcentaje": 0.0
+    },
+    {
+      "comprobacion": "Llegada inválida",
+      "registros": 0,
+      "porcentaje": 0.0
+    },
+    {
+      "comprobacion": "Fecha estado inválida",
+      "registros": 0,
+      "porcentaje": 0.0
+    },
+    {
+      "comprobacion": "Repetidor fuera de 0/1",
+      "registros": 0,
+      "porcentaje": 0.0
+    }
+  ],
+  "objetivo": [
+    {
+      "is_canceled": 0,
+      "reservas": 75166,
+      "porcentaje": 62.958371722924866
+    },
+    {
+      "is_canceled": 1,
+      "reservas": 44224,
+      "porcentaje": 37.041628277075134
+    }
+  ],
+  "hoteles": [
+    {
+      "hotel": "City Hotel",
+      "reservas": 79330,
+      "cancelaciones": 33102,
+      "tasa": 0.41726963317786464,
+      "porcentaje_reservas": 66.44610101348522,
+      "tasa_pct": 41.72696331778646
+    },
+    {
+      "hotel": "Resort Hotel",
+      "reservas": 40060,
+      "cancelaciones": 11122,
+      "tasa": 0.27763354967548676,
+      "porcentaje_reservas": 33.55389898651478,
+      "tasa_pct": 27.763354967548675
+    }
+  ],
+  "antelacion": [
+    {
+      "antelacion": "0 días",
+      "reservas": 6345,
+      "cancelaciones": 430,
+      "tasa": 0.0677698975571316,
+      "porcentaje_reservas": 5.3145154535555745,
+      "tasa_pct": 6.77698975571316
+    },
+    {
+      "antelacion": "1–7",
+      "reservas": 13401,
+      "cancelaciones": 1472,
+      "tasa": 0.10984254906350273,
+      "porcentaje_reservas": 11.224558170701064,
+      "tasa_pct": 10.984254906350273
+    },
+    {
+      "antelacion": "8–30",
+      "reservas": 18960,
+      "cancelaciones": 5283,
+      "tasa": 0.2786392405063291,
+      "porcentaje_reservas": 15.880727029064412,
+      "tasa_pct": 27.86392405063291
+    },
+    {
+      "antelacion": "31–90",
+      "reservas": 29553,
+      "cancelaciones": 11141,
+      "tasa": 0.37698372415660003,
+      "porcentaje_reservas": 24.753329424574922,
+      "tasa_pct": 37.69837241566
+    },
+    {
+      "antelacion": "91–180",
+      "reservas": 26439,
+      "cancelaciones": 11821,
+      "tasa": 0.44710465600060517,
+      "porcentaje_reservas": 22.14507077644694,
+      "tasa_pct": 44.710465600060516
+    },
+    {
+      "antelacion": "181–365",
+      "reservas": 21544,
+      "cancelaciones": 11947,
+      "tasa": 0.5545395469736354,
+      "porcentaje_reservas": 18.045062400536057,
+      "tasa_pct": 55.45395469736354
+    },
+    {
+      "antelacion": ">365",
+      "reservas": 3148,
+      "cancelaciones": 2130,
+      "tasa": 0.6766200762388819,
+      "porcentaje_reservas": 2.636736745121032,
+      "tasa_pct": 67.66200762388819
+    }
+  ],
+  "adr": [
+    {
+      "rango_adr": "≤0",
+      "reservas": 1960,
+      "cancelaciones": 213,
+      "tasa": 0.1086734693877551,
+      "porcentaje_reservas": 1.6416785325404137,
+      "tasa_pct": 10.86734693877551
+    },
+    {
+      "rango_adr": "0–50",
+      "reservas": 10037,
+      "cancelaciones": 2331,
+      "tasa": 0.23224070937531135,
+      "porcentaje_reservas": 8.406901750565375,
+      "tasa_pct": 23.224070937531135
+    },
+    {
+      "rango_adr": "50–100",
+      "reservas": 55641,
+      "cancelaciones": 21669,
+      "tasa": 0.3894430366096943,
+      "porcentaje_reservas": 46.604405729123044,
+      "tasa_pct": 38.94430366096943
+    },
+    {
+      "rango_adr": "100–150",
+      "reservas": 35244,
+      "cancelaciones": 13724,
+      "tasa": 0.38939961411871526,
+      "porcentaje_reservas": 29.52006030655834,
+      "tasa_pct": 38.93996141187153
+    },
+    {
+      "rango_adr": "150–200",
+      "reservas": 11579,
+      "cancelaciones": 4395,
+      "tasa": 0.37956645651610676,
+      "porcentaje_reservas": 9.698467208308903,
+      "tasa_pct": 37.95664565161068
+    },
+    {
+      "rango_adr": "200–300",
+      "reservas": 4653,
+      "cancelaciones": 1805,
+      "tasa": 0.3879217709004943,
+      "porcentaje_reservas": 3.897311332607421,
+      "tasa_pct": 38.79217709004943
+    },
+    {
+      "rango_adr": ">300",
+      "reservas": 276,
+      "cancelaciones": 87,
+      "tasa": 0.31521739130434784,
+      "porcentaje_reservas": 0.23117514029650724,
+      "tasa_pct": 31.521739130434785
+    }
+  ],
+  "deposit_type": [
+    {
+      "deposit_type": "No Deposit",
+      "reservas": 104641,
+      "cancelaciones": 29694,
+      "tasa": 0.28377022390841067,
+      "porcentaje_reservas": 87.64636904263338,
+      "tasa_pct": 28.377022390841066
+    },
+    {
+      "deposit_type": "Non Refund",
+      "reservas": 14587,
+      "cancelaciones": 14494,
+      "tasa": 0.9936244601357374,
+      "porcentaje_reservas": 12.21794120110562,
+      "tasa_pct": 99.36244601357373
+    },
+    {
+      "deposit_type": "Refundable",
+      "reservas": 162,
+      "cancelaciones": 36,
+      "tasa": 0.2222222222222222,
+      "porcentaje_reservas": 0.1356897562609934,
+      "tasa_pct": 22.22222222222222
+    }
+  ],
+  "distribution_channel": [
+    {
+      "distribution_channel": "TA/TO",
+      "reservas": 97870,
+      "cancelaciones": 40152,
+      "tasa": 0.41025850618166954,
+      "porcentaje_reservas": 81.97503978557668,
+      "tasa_pct": 41.025850618166956
+    },
+    {
+      "distribution_channel": "Direct",
+      "reservas": 14645,
+      "cancelaciones": 2557,
+      "tasa": 0.17459883919426425,
+      "porcentaje_reservas": 12.266521484211408,
+      "tasa_pct": 17.459883919426424
+    },
+    {
+      "distribution_channel": "Corporate",
+      "reservas": 6677,
+      "cancelaciones": 1474,
+      "tasa": 0.22075782537067545,
+      "porcentaje_reservas": 5.592595694781807,
+      "tasa_pct": 22.075782537067546
+    },
+    {
+      "distribution_channel": "GDS",
+      "reservas": 193,
+      "cancelaciones": 37,
+      "tasa": 0.19170984455958548,
+      "porcentaje_reservas": 0.1616550799899489,
+      "tasa_pct": 19.170984455958546
+    },
+    {
+      "distribution_channel": "Undefined",
+      "reservas": 5,
+      "cancelaciones": 4,
+      "tasa": 0.8,
+      "porcentaje_reservas": 0.004187955440154116,
+      "tasa_pct": 80.0
+    }
+  ],
+  "market_segment": [
+    {
+      "market_segment": "Online TA",
+      "reservas": 56477,
+      "cancelaciones": 20739,
+      "tasa": 0.3672114312020823,
+      "porcentaje_reservas": 47.30463187871681,
+      "tasa_pct": 36.721143120208225
+    },
+    {
+      "market_segment": "Offline TA/TO",
+      "reservas": 24219,
+      "cancelaciones": 8311,
+      "tasa": 0.34316032866757507,
+      "porcentaje_reservas": 20.28561856101851,
+      "tasa_pct": 34.31603286675751
+    },
+    {
+      "market_segment": "Groups",
+      "reservas": 19811,
+      "cancelaciones": 12097,
+      "tasa": 0.6106203624249155,
+      "porcentaje_reservas": 16.59351704497864,
+      "tasa_pct": 61.062036242491544
+    },
+    {
+      "market_segment": "Direct",
+      "reservas": 12606,
+      "cancelaciones": 1934,
+      "tasa": 0.15341900682214818,
+      "porcentaje_reservas": 10.55867325571656,
+      "tasa_pct": 15.341900682214819
+    },
+    {
+      "market_segment": "Corporate",
+      "reservas": 5295,
+      "cancelaciones": 992,
+      "tasa": 0.1873465533522191,
+      "porcentaje_reservas": 4.43504481112321,
+      "tasa_pct": 18.73465533522191
+    },
+    {
+      "market_segment": "Complementary",
+      "reservas": 743,
+      "cancelaciones": 97,
+      "tasa": 0.13055181695827725,
+      "porcentaje_reservas": 0.6223301784069017,
+      "tasa_pct": 13.055181695827725
+    },
+    {
+      "market_segment": "Aviation",
+      "reservas": 237,
+      "cancelaciones": 52,
+      "tasa": 0.21940928270042195,
+      "porcentaje_reservas": 0.19850908786330512,
+      "tasa_pct": 21.940928270042196
+    },
+    {
+      "market_segment": "Undefined",
+      "reservas": 2,
+      "cancelaciones": 2,
+      "tasa": 1.0,
+      "porcentaje_reservas": 0.0016751821760616467,
+      "tasa_pct": 100.0
+    }
+  ],
+  "customer_type": [
+    {
+      "customer_type": "Transient",
+      "reservas": 89613,
+      "cancelaciones": 36514,
+      "tasa": 0.4074632028835102,
+      "porcentaje_reservas": 75.05905017170618,
+      "tasa_pct": 40.746320288351015
+    },
+    {
+      "customer_type": "Transient-Party",
+      "reservas": 25124,
+      "cancelaciones": 6389,
+      "tasa": 0.2542986785543703,
+      "porcentaje_reservas": 21.043638495686405,
+      "tasa_pct": 25.42986785543703
+    },
+    {
+      "customer_type": "Contract",
+      "reservas": 4076,
+      "cancelaciones": 1262,
+      "tasa": 0.3096172718351325,
+      "porcentaje_reservas": 3.414021274813636,
+      "tasa_pct": 30.96172718351325
+    },
+    {
+      "customer_type": "Group",
+      "reservas": 577,
+      "cancelaciones": 59,
+      "tasa": 0.1022530329289428,
+      "porcentaje_reservas": 0.4832900577937851,
+      "tasa_pct": 10.22530329289428
+    }
+  ],
+  "is_repeated_guest": [
+    {
+      "is_repeated_guest": 0,
+      "reservas": 115580,
+      "cancelaciones": 43672,
+      "tasa": 0.3778508392455442,
+      "porcentaje_reservas": 96.80877795460256,
+      "tasa_pct": 37.78508392455442
+    },
+    {
+      "is_repeated_guest": 1,
+      "reservas": 3810,
+      "cancelaciones": 552,
+      "tasa": 0.14488188976377953,
+      "porcentaje_reservas": 3.191222045397437,
+      "tasa_pct": 14.488188976377952
+    }
+  ],
+  "previous_cancellations": [
+    {
+      "previous_cancellations_positivo": false,
+      "reservas": 112906,
+      "cancelaciones": 38282,
+      "tasa": 0.33906081164862806,
+      "porcentaje_reservas": 94.56905938520813,
+      "tasa_pct": 33.906081164862805
+    },
+    {
+      "previous_cancellations_positivo": true,
+      "reservas": 6484,
+      "cancelaciones": 5942,
+      "tasa": 0.9164096236890809,
+      "porcentaje_reservas": 5.430940614791859,
+      "tasa_pct": 91.64096236890809
+    }
+  ],
+  "previous_bookings_not_canceled": [
+    {
+      "previous_bookings_not_canceled_positivo": false,
+      "reservas": 115770,
+      "cancelaciones": 44024,
+      "tasa": 0.3802712274337048,
+      "porcentaje_reservas": 96.96792026132842,
+      "tasa_pct": 38.02712274337048
+    },
+    {
+      "previous_bookings_not_canceled_positivo": true,
+      "reservas": 3620,
+      "cancelaciones": 200,
+      "tasa": 0.055248618784530384,
+      "porcentaje_reservas": 3.0320797386715803,
+      "tasa_pct": 5.524861878453039
+    }
+  ],
+  "total_of_special_requests": [
+    {
+      "total_of_special_requests": 0,
+      "reservas": 70318,
+      "cancelaciones": 33556,
+      "tasa": 0.4772035609658978,
+      "porcentaje_reservas": 58.89773012815144,
+      "tasa_pct": 47.720356096589775
+    },
+    {
+      "total_of_special_requests": 1,
+      "reservas": 33226,
+      "cancelaciones": 7318,
+      "tasa": 0.2202492024318305,
+      "porcentaje_reservas": 27.829801490912136,
+      "tasa_pct": 22.02492024318305
+    },
+    {
+      "total_of_special_requests": 2,
+      "reservas": 12969,
+      "cancelaciones": 2866,
+      "tasa": 0.22098851106484693,
+      "porcentaje_reservas": 10.862718820671748,
+      "tasa_pct": 22.098851106484695
+    },
+    {
+      "total_of_special_requests": 3,
+      "reservas": 2497,
+      "cancelaciones": 446,
+      "tasa": 0.17861433720464556,
+      "porcentaje_reservas": 2.091464946812966,
+      "tasa_pct": 17.861433720464557
+    },
+    {
+      "total_of_special_requests": 4,
+      "reservas": 340,
+      "cancelaciones": 36,
+      "tasa": 0.10588235294117647,
+      "porcentaje_reservas": 0.28478096993047997,
+      "tasa_pct": 10.588235294117647
+    },
+    {
+      "total_of_special_requests": 5,
+      "reservas": 40,
+      "cancelaciones": 2,
+      "tasa": 0.05,
+      "porcentaje_reservas": 0.03350364352123293,
+      "tasa_pct": 5.0
+    }
+  ],
+  "aparcamiento": [
+    {
+      "solicita_aparcamiento": false,
+      "reservas": 111974,
+      "cancelaciones": 44224,
+      "tasa": 0.39494882740636217,
+      "porcentaje_reservas": 93.78842449116341,
+      "tasa_pct": 39.494882740636214
+    },
+    {
+      "solicita_aparcamiento": true,
+      "reservas": 7416,
+      "cancelaciones": 0,
+      "tasa": 0.0,
+      "porcentaje_reservas": 6.211575508836586,
+      "tasa_pct": 0.0
+    }
+  ],
+  "estancia": [
+    {
+      "noches": "0",
+      "reservas": 715,
+      "cancelaciones": 35,
+      "tasa": 0.04895104895104895,
+      "porcentaje_reservas": 0.5988776279420387,
+      "tasa_pct": 4.895104895104895
+    },
+    {
+      "noches": "1",
+      "reservas": 21020,
+      "cancelaciones": 5271,
+      "tasa": 0.2507611798287345,
+      "porcentaje_reservas": 17.606164670407907,
+      "tasa_pct": 25.076117982873452
+    },
+    {
+      "noches": "2–3",
+      "reservas": 54719,
+      "cancelaciones": 23514,
+      "tasa": 0.4297227654014145,
+      "porcentaje_reservas": 45.832146745958624,
+      "tasa_pct": 42.97227654014145
+    },
+    {
+      "noches": "4–7",
+      "reservas": 37679,
+      "cancelaciones": 13525,
+      "tasa": 0.35895326309084635,
+      "porcentaje_reservas": 31.559594605913393,
+      "tasa_pct": 35.89532630908464
+    },
+    {
+      "noches": "8–14",
+      "reservas": 4818,
+      "cancelaciones": 1636,
+      "tasa": 0.33955998339559984,
+      "porcentaje_reservas": 4.035513862132507,
+      "tasa_pct": 33.95599833955998
+    },
+    {
+      "noches": ">14",
+      "reservas": 439,
+      "cancelaciones": 243,
+      "tasa": 0.5535307517084282,
+      "porcentaje_reservas": 0.36770248764553143,
+      "tasa_pct": 55.35307517084283
+    }
+  ],
+  "huespedes": [
+    {
+      "huespedes": "0",
+      "reservas": 180,
+      "cancelaciones": 25,
+      "tasa": 0.1388888888888889,
+      "porcentaje_reservas": 0.1507663958455482,
+      "tasa_pct": 13.88888888888889
+    },
+    {
+      "huespedes": "1",
+      "reservas": 22581,
+      "cancelaciones": 6555,
+      "tasa": 0.29028829546964263,
+      "porcentaje_reservas": 18.913644358824023,
+      "tasa_pct": 29.028829546964264
+    },
+    {
+      "huespedes": "2",
+      "reservas": 82048,
+      "cancelaciones": 32569,
+      "tasa": 0.3969505655226209,
+      "porcentaje_reservas": 68.72267359075299,
+      "tasa_pct": 39.695056552262095
+    },
+    {
+      "huespedes": "3",
+      "reservas": 10494,
+      "cancelaciones": 3376,
+      "tasa": 0.32170764246235944,
+      "porcentaje_reservas": 8.78968087779546,
+      "tasa_pct": 32.17076424623595
+    },
+    {
+      "huespedes": "4",
+      "reservas": 3929,
+      "cancelaciones": 1646,
+      "tasa": 0.4189361160600662,
+      "porcentaje_reservas": 3.290895384873105,
+      "tasa_pct": 41.89361160600662
+    },
+    {
+      "huespedes": ">4",
+      "reservas": 154,
+      "cancelaciones": 49,
+      "tasa": 0.3181818181818182,
+      "porcentaje_reservas": 0.1289890275567468,
+      "tasa_pct": 31.818181818181817
+    },
+    {
+      "huespedes": "Desconocido",
+      "reservas": 4,
+      "cancelaciones": 4,
+      "tasa": 1.0,
+      "porcentaje_reservas": 0.0033503643521232934,
+      "tasa_pct": 100.0
+    }
+  ],
+  "cobertura": {
+    "inicio": "2015-07-01",
+    "fin": "2017-08-31"
+  },
+  "anual": [
+    {
+      "arrival_date_year": 2015,
+      "reservas": 21996,
+      "cancelaciones": 8142,
+      "tasa": 0.3701582105837425,
+      "porcentaje_reservas": 18.42365357232599,
+      "tasa_pct": 37.01582105837425
+    },
+    {
+      "arrival_date_year": 2016,
+      "reservas": 56707,
+      "cancelaciones": 20337,
+      "tasa": 0.3586329730015695,
+      "porcentaje_reservas": 47.4972778289639,
+      "tasa_pct": 35.86329730015695
+    },
+    {
+      "arrival_date_year": 2017,
+      "reservas": 40687,
+      "cancelaciones": 15745,
+      "tasa": 0.38697864182662767,
+      "porcentaje_reservas": 34.07906859871011,
+      "tasa_pct": 38.69786418266277
+    }
+  ],
+  "mensual": [
+    {
+      "mes_llegada": "2015-07",
+      "reservas": 2776,
+      "cancelaciones": 1259,
+      "tasa_pct": 45.35302593659942
+    },
+    {
+      "mes_llegada": "2015-08",
+      "reservas": 3889,
+      "cancelaciones": 1598,
+      "tasa_pct": 41.09025456415531
+    },
+    {
+      "mes_llegada": "2015-09",
+      "reservas": 5114,
+      "cancelaciones": 2094,
+      "tasa_pct": 40.9464215877982
+    },
+    {
+      "mes_llegada": "2015-10",
+      "reservas": 4957,
+      "cancelaciones": 1732,
+      "tasa_pct": 34.94048819850716
+    },
+    {
+      "mes_llegada": "2015-11",
+      "reservas": 2340,
+      "cancelaciones": 486,
+      "tasa_pct": 20.76923076923077
+    },
+    {
+      "mes_llegada": "2015-12",
+      "reservas": 2920,
+      "cancelaciones": 973,
+      "tasa_pct": 33.321917808219176
+    },
+    {
+      "mes_llegada": "2016-01",
+      "reservas": 2248,
+      "cancelaciones": 557,
+      "tasa_pct": 24.777580071174377
+    },
+    {
+      "mes_llegada": "2016-02",
+      "reservas": 3891,
+      "cancelaciones": 1337,
+      "tasa_pct": 34.36134669750707
+    },
+    {
+      "mes_llegada": "2016-03",
+      "reservas": 4824,
+      "cancelaciones": 1477,
+      "tasa_pct": 30.617744610281925
+    },
+    {
+      "mes_llegada": "2016-04",
+      "reservas": 5428,
+      "cancelaciones": 2061,
+      "tasa_pct": 37.96978629329403
+    },
+    {
+      "mes_llegada": "2016-05",
+      "reservas": 5478,
+      "cancelaciones": 1915,
+      "tasa_pct": 34.95801387367653
+    },
+    {
+      "mes_llegada": "2016-06",
+      "reservas": 5292,
+      "cancelaciones": 2096,
+      "tasa_pct": 39.60695389266818
+    },
+    {
+      "mes_llegada": "2016-07",
+      "reservas": 4572,
+      "cancelaciones": 1499,
+      "tasa_pct": 32.78652668416448
+    },
+    {
+      "mes_llegada": "2016-08",
+      "reservas": 5063,
+      "cancelaciones": 1825,
+      "tasa_pct": 36.0458226348015
+    },
+    {
+      "mes_llegada": "2016-09",
+      "reservas": 5394,
+      "cancelaciones": 2022,
+      "tasa_pct": 37.4860956618465
+    },
+    {
+      "mes_llegada": "2016-10",
+      "reservas": 6203,
+      "cancelaciones": 2514,
+      "tasa_pct": 40.52877639851685
+    },
+    {
+      "mes_llegada": "2016-11",
+      "reservas": 4454,
+      "cancelaciones": 1636,
+      "tasa_pct": 36.73102828917827
+    },
+    {
+      "mes_llegada": "2016-12",
+      "reservas": 3860,
+      "cancelaciones": 1398,
+      "tasa_pct": 36.21761658031088
+    },
+    {
+      "mes_llegada": "2017-01",
+      "reservas": 3681,
+      "cancelaciones": 1250,
+      "tasa_pct": 33.95816354251562
+    },
+    {
+      "mes_llegada": "2017-02",
+      "reservas": 4177,
+      "cancelaciones": 1359,
+      "tasa_pct": 32.53531242518554
+    },
+    {
+      "mes_llegada": "2017-03",
+      "reservas": 4970,
+      "cancelaciones": 1672,
+      "tasa_pct": 33.64185110663984
+    },
+    {
+      "mes_llegada": "2017-04",
+      "reservas": 5661,
+      "cancelaciones": 2463,
+      "tasa_pct": 43.50821409644939
+    },
+    {
+      "mes_llegada": "2017-05",
+      "reservas": 6313,
+      "cancelaciones": 2762,
+      "tasa_pct": 43.750990020592425
+    },
+    {
+      "mes_llegada": "2017-06",
+      "reservas": 5647,
+      "cancelaciones": 2439,
+      "tasa_pct": 43.191074907030284
+    },
+    {
+      "mes_llegada": "2017-07",
+      "reservas": 5313,
+      "cancelaciones": 1984,
+      "tasa_pct": 37.342367777150386
+    },
+    {
+      "mes_llegada": "2017-08",
+      "reservas": 4925,
+      "cancelaciones": 1816,
+      "tasa_pct": 36.87309644670051
+    }
+  ],
+  "correlacion_objetivo": [
+    {
+      "variable": "lead_time",
+      "Pearson": 0.29312335576071835,
+      "Spearman": 0.3166345850118583,
+      "abs_Pearson": 0.29312335576071835
+    },
+    {
+      "variable": "total_of_special_requests",
+      "Pearson": -0.2346577739690245,
+      "Spearman": -0.25851995979989045,
+      "abs_Pearson": 0.2346577739690245
+    },
+    {
+      "variable": "required_car_parking_spaces",
+      "Pearson": -0.19549781749449852,
+      "Spearman": -0.19739702255886032,
+      "abs_Pearson": 0.19549781749449852
+    },
+    {
+      "variable": "booking_changes",
+      "Pearson": -0.14438099106132654,
+      "Spearman": -0.18510738352996442,
+      "abs_Pearson": 0.14438099106132654
+    },
+    {
+      "variable": "previous_cancellations",
+      "Pearson": 0.11013280822284209,
+      "Spearman": 0.2702334145679732,
+      "abs_Pearson": 0.11013280822284209
+    },
+    {
+      "variable": "is_repeated_guest",
+      "Pearson": -0.08479341835709014,
+      "Spearman": -0.08479341835708806,
+      "abs_Pearson": 0.08479341835709014
+    },
+    {
+      "variable": "adults",
+      "Pearson": 0.06001721283955582,
+      "Spearman": 0.06702651903517233,
+      "abs_Pearson": 0.06001721283955582
+    },
+    {
+      "variable": "previous_bookings_not_canceled",
+      "Pearson": -0.05735772316594581,
+      "Spearman": -0.11535443633217825,
+      "abs_Pearson": 0.05735772316594581
+    },
+    {
+      "variable": "days_in_waiting_list",
+      "Pearson": 0.054185824117780675,
+      "Spearman": 0.09823682733637065,
+      "abs_Pearson": 0.054185824117780675
+    },
+    {
+      "variable": "adr",
+      "Pearson": 0.04755659788038999,
+      "Spearman": 0.05087592619592027,
+      "abs_Pearson": 0.04755659788038999
+    },
+    {
+      "variable": "babies",
+      "Pearson": -0.032491089208332935,
+      "Spearman": -0.03430647727230122,
+      "abs_Pearson": 0.032491089208332935
+    },
+    {
+      "variable": "stays_in_week_nights",
+      "Pearson": 0.024764629045870484,
+      "Spearman": 0.041417719720767535,
+      "abs_Pearson": 0.024764629045870484
+    },
+    {
+      "variable": "children",
+      "Pearson": 0.005047790029269149,
+      "Spearman": -0.002790758122044517,
+      "abs_Pearson": 0.005047790029269149
+    },
+    {
+      "variable": "stays_in_weekend_nights",
+      "Pearson": -0.0017910780782638134,
+      "Spearman": -0.004105508506618211,
+      "abs_Pearson": 0.0017910780782638134
+    }
+  ],
+  "entorno": {
+    "python": "3.14.5",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0",
+    "seaborn": "0.13.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "verificacion": {
+    "dataset_sin_cambios": true,
+    "df_sin_cambios": true,
+    "referencias_sin_cambios": 105,
+    "referencias_no_disponibles": 0,
+    "data_processed_vacio": true,
+    "cwd_ejecucion": "raiz"
+  }
+}

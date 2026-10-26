@@ -1,0 +1,101 @@
+{
+  "notebooks": [
+    {
+      "archivo": "notebooks/baseline.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 6,
+      "celdas_markdown_agregadas": 6,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/comparacion_modelos.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 4,
+      "celdas_markdown_agregadas": 4,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/correccion_sesgo_temporal.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 6,
+      "celdas_markdown_agregadas": 6,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/eda.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 14,
+      "celdas_markdown_agregadas": 14,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/evaluacion_final.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 5,
+      "celdas_markdown_agregadas": 5,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/explicabilidad.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 6,
+      "celdas_markdown_agregadas": 6,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/optimizacion.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 5,
+      "celdas_markdown_agregadas": 5,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/preparacion.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 9,
+      "celdas_markdown_agregadas": 9,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/protocolo_temporal.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 4,
+      "celdas_markdown_agregadas": 4,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    },
+    {
+      "archivo": "notebooks/seleccion_final.ipynb",
+      "esquema_nbformat_valido": true,
+      "celdas_codigo": 5,
+      "celdas_markdown_agregadas": 5,
+      "errores_en_salidas_guardadas": 0,
+      "ejecutado": false
+    }
+  ],
+  "archivos_python_sintaxis_valida": 36,
+  "experimentos_ejecutados": 0,
+  "comprobacion": "Compilación en memoria y esquema nbformat; sin importar módulos del proyecto.",
+  "javascript_sintaxis": [
+    {
+      "archivo": "entrega_final/fuentes/crear_presentacion.mjs",
+      "comando": "node --check",
+      "exit_code": 0,
+      "ejecutado_como_programa": false
+    },
+    {
+      "archivo": "entrega_final/fuentes/renderizar_presentacion.mjs",
+      "comando": "node --check",
+      "exit_code": 0,
+      "ejecutado_como_programa": false
+    }
+  ]
+}

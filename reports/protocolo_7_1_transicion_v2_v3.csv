@@ -1,0 +1,6 @@
+particion,embargo_train_validacion,embargo_validacion_prueba,entrenamiento,prueba_reservada,validacion
+entrenamiento,2281,181,48671,319,2712
+no_madura_entrenamiento,5079,184,486,1382,4958
+no_madura_validacion,0,2086,0,6053,336
+prueba_reservada,0,4208,0,22357,0
+validacion,2275,1199,0,2718,11905

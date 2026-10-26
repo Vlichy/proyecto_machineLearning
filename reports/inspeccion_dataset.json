@@ -1,0 +1,65 @@
+{
+  "archivo": "data/raw/hotel_bookings.csv",
+  "origen": "C:\\Users\\panio\\Documents\\Curso\\MachineLearning\\archive.zip",
+  "miembro_zip": "hotel_bookings.csv",
+  "sha256_csv": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+  "sha256_zip": "27f3d58e41f60ae49813de60344d932bdbf6d48310ce19c5be209532e164612e",
+  "filas": 119390,
+  "columnas": 32,
+  "tipos": {
+    "hotel": "str",
+    "is_canceled": "int64",
+    "lead_time": "int64",
+    "arrival_date_year": "int64",
+    "arrival_date_month": "str",
+    "arrival_date_week_number": "int64",
+    "arrival_date_day_of_month": "int64",
+    "stays_in_weekend_nights": "int64",
+    "stays_in_week_nights": "int64",
+    "adults": "int64",
+    "children": "float64",
+    "babies": "int64",
+    "meal": "str",
+    "country": "str",
+    "market_segment": "str",
+    "distribution_channel": "str",
+    "is_repeated_guest": "int64",
+    "previous_cancellations": "int64",
+    "previous_bookings_not_canceled": "int64",
+    "reserved_room_type": "str",
+    "assigned_room_type": "str",
+    "booking_changes": "int64",
+    "deposit_type": "str",
+    "agent": "float64",
+    "company": "float64",
+    "days_in_waiting_list": "int64",
+    "customer_type": "str",
+    "adr": "float64",
+    "required_car_parking_spaces": "int64",
+    "total_of_special_requests": "int64",
+    "reservation_status": "str",
+    "reservation_status_date": "str"
+  },
+  "hoteles": {
+    "City Hotel": 79330,
+    "Resort Hotel": 40060
+  },
+  "objetivo": {
+    "0": 75166,
+    "1": 44224
+  },
+  "nulos": {
+    "children": 4,
+    "country": 488,
+    "agent": 16340,
+    "company": 112593
+  },
+  "duplicados_adicionales": 31994,
+  "filas_en_grupos_duplicados": 40165,
+  "codificacion": "UTF-8 estricto; lectura sin errores",
+  "caracter_sustitucion": false,
+  "entorno": {
+    "python": "3.14.5",
+    "pandas": "3.0.3"
+  }
+}

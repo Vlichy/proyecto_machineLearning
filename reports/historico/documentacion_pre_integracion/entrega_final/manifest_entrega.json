@@ -1,0 +1,30 @@
+{
+  "formato": "SHA-256",
+  "excluye": [
+    "manifest_entrega.json",
+    "verificacion_entrega.json"
+  ],
+  "archivos": {
+    "figuras\\01_cancelaciones.png": "cfdb074cbbca0924b6b7c4fa0489fc9bbf676175ff7f1d5ee8385ad3f264c949",
+    "figuras\\02_eda.png": "c5ecebe26d60cabce0240dc003d900cd1514871ef46e0ae869a6887d1a6b51e4",
+    "figuras\\03_modelos.png": "dd5bf285f6abf938f9ed81bbc3f29241a434085e691abdd16b67609eb03554a7",
+    "figuras\\04_curvas.png": "cc157b2984e552f48bf2aae2239b071b6df10a81fe06078b0ab4e49466b574fc",
+    "figuras\\05_matriz_calibracion.png": "8be1d7ffe6eaa381eeea21e6ddfb5dd4c54be4f48c4ec49356f50cd49fdd42c2",
+    "figuras\\06_mensual.png": "247ddea91f78e37481fedb7ada869984d13d0c6c74969a5c93fd9b01d872f458",
+    "figuras\\07_hoteles.png": "f900b99dc9f714d5385c2e07ce3b7e0399d89acd183ac12bc9554512a4bfccde",
+    "fuentes\\auditar_entrega.py": "ed07d3db62741aae19e6a8994d2c7fe7fecdd3d2cd486c4623c304561cc2d4a3",
+    "fuentes\\crear_presentacion.mjs": "b3581cfd1e7012add4afd94b9691ba4f4ee9400bfb15a93a44557f65e2853c6f",
+    "fuentes\\datos_presentacion.json": "e9f9de61891563144902a87dcf5838302df8a19a85ae2a04aa123ebfbbbaa122",
+    "fuentes\\exportar_pdf.py": "c955bc3e41a3404e96a9ce416645d052c64f07ee91422990b1f41b4670dd35a1",
+    "fuentes\\integridad_previa.json": "601a6308232e032fd0e50aec571eefa45c302cb1bd74e3fa245367903ea7d16e",
+    "fuentes\\notebooks_revision.json": "1571546e9f75ab87d3d38f34fbbe306bed819b1e7b603f63b26d7ee61ef8b1f5",
+    "fuentes\\preparar_entrega.py": "fbaf76659be7d310ead9dce12961cf53c521f8a37571774157e9cfc72205af57",
+    "fuentes\\renderizar_presentacion.mjs": "daa7bd6f3ef807cc81142a870a00087fbcd4aa5d1f12286059c8bb3a5e03799c",
+    "memoria_final.md": "aebcf33a398d6111ecbf0cd390d9cd479054826e5fedae2c5ac31ea4b24cddec",
+    "memoria_final.pdf": "c5ffe534cc543cd06c2581f43ccd5468e0fc08504a1cc88a8bd2446c99dee49b",
+    "notas_presentacion.md": "cf5b846b4a3d714f1b8b79c28a6585d29fb6227f48cac54b4976c2cf5a1cb016",
+    "presentacion_final.pptx": "7eb999b0143dd228c400f16c1aa2c03b7b531a8a7e4f346184187e2b2372a5dd",
+    "README.md": "c329c35243b90a5abc3fb9f63559698ecaec0cb2ed291143ea65d306fd5203b2",
+    "resumen_ejecutivo.md": "7d46889d5a8be8c3706edbcb1027f8257ebe293b3bc94446a8e2c1f229fdfbf2"
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "notebook": "notebooks\\baseline.ipynb",
+    "celdas_codigo": 6,
+    "ejecutadas_guardadas": 6,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\comparacion_modelos.ipynb",
+    "celdas_codigo": 4,
+    "ejecutadas_guardadas": 4,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\correccion_sesgo_temporal.ipynb",
+    "celdas_codigo": 6,
+    "ejecutadas_guardadas": 6,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\eda.ipynb",
+    "celdas_codigo": 14,
+    "ejecutadas_guardadas": 14,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\evaluacion_final.ipynb",
+    "celdas_codigo": 5,
+    "ejecutadas_guardadas": 5,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\explicabilidad.ipynb",
+    "celdas_codigo": 6,
+    "ejecutadas_guardadas": 6,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\optimizacion.ipynb",
+    "celdas_codigo": 5,
+    "ejecutadas_guardadas": 5,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\preparacion.ipynb",
+    "celdas_codigo": 9,
+    "ejecutadas_guardadas": 9,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\protocolo_temporal.ipynb",
+    "celdas_codigo": 4,
+    "ejecutadas_guardadas": 4,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  },
+  {
+    "notebook": "notebooks\\seleccion_final.ipynb",
+    "celdas_codigo": 5,
+    "ejecutadas_guardadas": 5,
+    "errores_guardados": 0,
+    "reejecutado_fase10": false
+  }
+]

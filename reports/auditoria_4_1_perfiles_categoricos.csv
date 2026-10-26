@@ -1,0 +1,69 @@
+grupo,variable,categoria,registros,porcentaje_grupo
+entrenamiento,hotel,City Hotel,31172,64.36772115305196
+entrenamiento,hotel,Resort Hotel,17256,35.63227884694805
+entrenamiento,market_segment,Online TA,17456,36.04526307095069
+entrenamiento,market_segment,Offline TA/TO,12601,26.020071033286527
+entrenamiento,market_segment,Groups,10337,21.34508961757661
+entrenamiento,market_segment,Direct,4928,10.175931279425125
+entrenamiento,market_segment,Corporate,2703,5.581481787395721
+entrenamiento,market_segment,Complementary,337,0.6958784174444537
+entrenamiento,market_segment,Aviation,64,0.1321549516808458
+entrenamiento,market_segment,Undefined,2,0.004129842240026431
+entrenamiento,customer_type,Transient,31128,64.27686462377137
+entrenamiento,customer_type,Transient-Party,14007,28.92335012802511
+entrenamiento,customer_type,Contract,3023,6.24225654579995
+entrenamiento,customer_type,Group,270,0.5575287024035682
+entrenamiento,distribution_channel,TA/TO,39178,80.89947963987775
+entrenamiento,distribution_channel,Direct,6088,12.571239778640455
+entrenamiento,distribution_channel,Corporate,3123,6.448748657801272
+entrenamiento,distribution_channel,GDS,34,0.07020731808044933
+entrenamiento,distribution_channel,Undefined,5,0.010324605600066077
+no_madura_entrenamiento,hotel,City Hotel,12730,71.41654978962131
+no_madura_entrenamiento,hotel,Resort Hotel,5095,28.583450210378682
+no_madura_entrenamiento,market_segment,Online TA,8105,45.46984572230014
+no_madura_entrenamiento,market_segment,Offline TA/TO,4890,27.433380084151473
+no_madura_entrenamiento,market_segment,Groups,3638,20.40953716690042
+no_madura_entrenamiento,market_segment,Direct,1049,5.884992987377279
+no_madura_entrenamiento,market_segment,Corporate,128,0.7180925666199158
+no_madura_entrenamiento,market_segment,Complementary,15,0.08415147265077139
+no_madura_entrenamiento,customer_type,Transient,13249,74.32819074333801
+no_madura_entrenamiento,customer_type,Transient-Party,4149,23.276297335203367
+no_madura_entrenamiento,customer_type,Contract,396,2.2215988779803646
+no_madura_entrenamiento,customer_type,Group,31,0.17391304347826086
+no_madura_entrenamiento,distribution_channel,TA/TO,16075,90.18232819074333
+no_madura_entrenamiento,distribution_channel,Direct,1238,6.945301542776998
+no_madura_entrenamiento,distribution_channel,Corporate,511,2.866760168302945
+no_madura_entrenamiento,distribution_channel,GDS,1,0.005610098176718092
+validacion,hotel,City Hotel,9372,66.8903004781957
+validacion,hotel,Resort Hotel,4639,33.109699521804295
+validacion,market_segment,Online TA,8412,60.03854114624224
+validacion,market_segment,Direct,1948,13.90336164442224
+validacion,market_segment,Offline TA/TO,1803,12.868460495325102
+validacion,market_segment,Corporate,901,6.430661623010492
+validacion,market_segment,Groups,711,5.074584255228035
+validacion,market_segment,Complementary,173,1.2347441296124473
+validacion,market_segment,Aviation,63,0.44964670615944613
+validacion,customer_type,Transient,12202,87.08871600885018
+validacion,customer_type,Transient-Party,1733,12.368853044036829
+validacion,customer_type,Group,67,0.47819570337591893
+validacion,customer_type,Contract,9,0.06423524373706374
+validacion,distribution_channel,TA/TO,10646,75.98315609164229
+validacion,distribution_channel,Direct,2173,15.509242737848833
+validacion,distribution_channel,Corporate,1122,8.007993719220613
+validacion,distribution_channel,GDS,70,0.4996074512882735
+no_madura_validacion,hotel,City Hotel,8502,67.68569381418676
+no_madura_validacion,hotel,Resort Hotel,4059,32.31430618581323
+no_madura_validacion,market_segment,Online TA,6681,53.188440410795316
+no_madura_validacion,market_segment,Groups,3378,26.89276331502269
+no_madura_validacion,market_segment,Offline TA/TO,1612,12.833373139081283
+no_madura_validacion,market_segment,Direct,670,5.333970225300534
+no_madura_validacion,market_segment,Corporate,214,1.7036860122601705
+no_madura_validacion,market_segment,Complementary,6,0.04776689754000478
+no_madura_validacion,customer_type,Transient,9796,77.9874213836478
+no_madura_validacion,customer_type,Transient-Party,2439,19.417243850011943
+no_madura_validacion,customer_type,Contract,297,2.3644614282302365
+no_madura_validacion,customer_type,Group,29,0.23087333811002309
+no_madura_validacion,distribution_channel,TA/TO,11301,89.96895151659899
+no_madura_validacion,distribution_channel,Direct,980,7.80192659820078
+no_madura_validacion,distribution_channel,Corporate,263,2.0937823421702095
+no_madura_validacion,distribution_channel,GDS,17,0.13533954303001353

@@ -1,0 +1,1163 @@
+{
+  "reproduccion": {
+    "reproduccion_mismo_algoritmo_parametros_y_filas": true,
+    "max_diferencia_probabilidad_validacion": 1.1102230246251565e-16,
+    "estadisticas_solo_train_verificadas": true,
+    "fit_registros": 48428,
+    "iteraciones": [
+      131
+    ],
+    "advertencias": [],
+    "predict_proba_solo_train_y_validacion": true
+  },
+  "modelo_original_modificado": false,
+  "particiones_modificadas": false,
+  "algoritmos_nuevos": false,
+  "prueba_solo_metadatos_temporales": true,
+  "scores_o_metricas_prueba_generados": false,
+  "umbral_definitivo_seleccionado": false,
+  "as_of_date_documentada": null,
+  "madurez_real_garantizada": false,
+  "fechas": {
+    "ultimo_dia_llegadas": "2017-08-31",
+    "max_fecha_estado_global": "2017-09-14",
+    "max_fecha_estado_prueba": "2017-09-14",
+    "max_cota_madurez_prueba": "2017-09-15"
+  },
+  "reservas_apartadas": 30386,
+  "regla_implementada_verificada": true,
+  "calibracion": {
+    "ece_10_bandas_descriptivo": 0.09038148332529598,
+    "sesgo_media_predicha_menos_observada": -0.07163861865583382,
+    "prior_train_constante": 0.3580573222102916,
+    "brier_referencia_constante_train_en_validacion": 0.20250435359740618,
+    "log_loss_referencia_constante_train_en_validacion": 0.5960516636369759
+  },
+  "tablas": {
+    "perfiles_seleccion": [
+      {
+        "grupo": "entrenamiento",
+        "registros": 48428,
+        "tasa_cancelacion": 0.3580573222102916,
+        "lead_time_media": 88.29534566779549,
+        "lead_time_mediana": 55.0,
+        "lead_time_p90": 256.0,
+        "noches_media": 3.2310440241182787,
+        "fraccion_city": 0.6436772115305195,
+        "estado_final_fechado_antes_corte": 48428
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "registros": 17825,
+        "tasa_cancelacion": 0.4755680224403927,
+        "lead_time_media": 226.88712482468443,
+        "lead_time_mediana": 200.0,
+        "lead_time_p90": 407.0,
+        "noches_media": 4.0120617110799435,
+        "fraccion_city": 0.7141654978962132,
+        "estado_final_fechado_antes_corte": 5868
+      },
+      {
+        "grupo": "validacion",
+        "registros": 14011,
+        "tasa_cancelacion": 0.26172293198201413,
+        "lead_time_media": 32.79773035472129,
+        "lead_time_mediana": 24.0,
+        "lead_time_p90": 80.0,
+        "noches_media": 2.8437656127328528,
+        "fraccion_city": 0.6689030047819571,
+        "estado_final_fechado_antes_corte": 14011
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "registros": 12561,
+        "tasa_cancelacion": 0.5045776610142505,
+        "lead_time_media": 161.70169572486267,
+        "lead_time_mediana": 161.0,
+        "lead_time_p90": 277.0,
+        "noches_media": 4.249104370671125,
+        "fraccion_city": 0.6768569381418676,
+        "estado_final_fechado_antes_corte": 4157
+      }
+    ],
+    "perfiles_categoricos": [
+      {
+        "grupo": "entrenamiento",
+        "variable": "hotel",
+        "categoria": "City Hotel",
+        "registros": 31172,
+        "porcentaje_grupo": 64.36772115305196
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "hotel",
+        "categoria": "Resort Hotel",
+        "registros": 17256,
+        "porcentaje_grupo": 35.63227884694805
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Online TA",
+        "registros": 17456,
+        "porcentaje_grupo": 36.04526307095069
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Offline TA/TO",
+        "registros": 12601,
+        "porcentaje_grupo": 26.020071033286527
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Groups",
+        "registros": 10337,
+        "porcentaje_grupo": 21.34508961757661
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Direct",
+        "registros": 4928,
+        "porcentaje_grupo": 10.175931279425125
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Corporate",
+        "registros": 2703,
+        "porcentaje_grupo": 5.581481787395721
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Complementary",
+        "registros": 337,
+        "porcentaje_grupo": 0.6958784174444537
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Aviation",
+        "registros": 64,
+        "porcentaje_grupo": 0.1321549516808458
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Undefined",
+        "registros": 2,
+        "porcentaje_grupo": 0.004129842240026431
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Transient",
+        "registros": 31128,
+        "porcentaje_grupo": 64.27686462377137
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Transient-Party",
+        "registros": 14007,
+        "porcentaje_grupo": 28.92335012802511
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Contract",
+        "registros": 3023,
+        "porcentaje_grupo": 6.24225654579995
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Group",
+        "registros": 270,
+        "porcentaje_grupo": 0.5575287024035682
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "TA/TO",
+        "registros": 39178,
+        "porcentaje_grupo": 80.89947963987775
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "Direct",
+        "registros": 6088,
+        "porcentaje_grupo": 12.571239778640455
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "Corporate",
+        "registros": 3123,
+        "porcentaje_grupo": 6.448748657801272
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "GDS",
+        "registros": 34,
+        "porcentaje_grupo": 0.07020731808044933
+      },
+      {
+        "grupo": "entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "Undefined",
+        "registros": 5,
+        "porcentaje_grupo": 0.010324605600066077
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "hotel",
+        "categoria": "City Hotel",
+        "registros": 12730,
+        "porcentaje_grupo": 71.41654978962131
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "hotel",
+        "categoria": "Resort Hotel",
+        "registros": 5095,
+        "porcentaje_grupo": 28.583450210378682
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Online TA",
+        "registros": 8105,
+        "porcentaje_grupo": 45.46984572230014
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Offline TA/TO",
+        "registros": 4890,
+        "porcentaje_grupo": 27.433380084151473
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Groups",
+        "registros": 3638,
+        "porcentaje_grupo": 20.40953716690042
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Direct",
+        "registros": 1049,
+        "porcentaje_grupo": 5.884992987377279
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Corporate",
+        "registros": 128,
+        "porcentaje_grupo": 0.7180925666199158
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "market_segment",
+        "categoria": "Complementary",
+        "registros": 15,
+        "porcentaje_grupo": 0.08415147265077139
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Transient",
+        "registros": 13249,
+        "porcentaje_grupo": 74.32819074333801
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Transient-Party",
+        "registros": 4149,
+        "porcentaje_grupo": 23.276297335203367
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Contract",
+        "registros": 396,
+        "porcentaje_grupo": 2.2215988779803646
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "customer_type",
+        "categoria": "Group",
+        "registros": 31,
+        "porcentaje_grupo": 0.17391304347826086
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "TA/TO",
+        "registros": 16075,
+        "porcentaje_grupo": 90.18232819074333
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "Direct",
+        "registros": 1238,
+        "porcentaje_grupo": 6.945301542776998
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "Corporate",
+        "registros": 511,
+        "porcentaje_grupo": 2.866760168302945
+      },
+      {
+        "grupo": "no_madura_entrenamiento",
+        "variable": "distribution_channel",
+        "categoria": "GDS",
+        "registros": 1,
+        "porcentaje_grupo": 0.005610098176718092
+      },
+      {
+        "grupo": "validacion",
+        "variable": "hotel",
+        "categoria": "City Hotel",
+        "registros": 9372,
+        "porcentaje_grupo": 66.8903004781957
+      },
+      {
+        "grupo": "validacion",
+        "variable": "hotel",
+        "categoria": "Resort Hotel",
+        "registros": 4639,
+        "porcentaje_grupo": 33.109699521804295
+      },
+      {
+        "grupo": "validacion",
+        "variable": "market_segment",
+        "categoria": "Online TA",
+        "registros": 8412,
+        "porcentaje_grupo": 60.03854114624224
+      },
+      {
+        "grupo": "validacion",
+        "variable": "market_segment",
+        "categoria": "Direct",
+        "registros": 1948,
+        "porcentaje_grupo": 13.90336164442224
+      },
+      {
+        "grupo": "validacion",
+        "variable": "market_segment",
+        "categoria": "Offline TA/TO",
+        "registros": 1803,
+        "porcentaje_grupo": 12.868460495325102
+      },
+      {
+        "grupo": "validacion",
+        "variable": "market_segment",
+        "categoria": "Corporate",
+        "registros": 901,
+        "porcentaje_grupo": 6.430661623010492
+      },
+      {
+        "grupo": "validacion",
+        "variable": "market_segment",
+        "categoria": "Groups",
+        "registros": 711,
+        "porcentaje_grupo": 5.074584255228035
+      },
+      {
+        "grupo": "validacion",
+        "variable": "market_segment",
+        "categoria": "Complementary",
+        "registros": 173,
+        "porcentaje_grupo": 1.2347441296124473
+      },
+      {
+        "grupo": "validacion",
+        "variable": "market_segment",
+        "categoria": "Aviation",
+        "registros": 63,
+        "porcentaje_grupo": 0.44964670615944613
+      },
+      {
+        "grupo": "validacion",
+        "variable": "customer_type",
+        "categoria": "Transient",
+        "registros": 12202,
+        "porcentaje_grupo": 87.08871600885018
+      },
+      {
+        "grupo": "validacion",
+        "variable": "customer_type",
+        "categoria": "Transient-Party",
+        "registros": 1733,
+        "porcentaje_grupo": 12.368853044036829
+      },
+      {
+        "grupo": "validacion",
+        "variable": "customer_type",
+        "categoria": "Group",
+        "registros": 67,
+        "porcentaje_grupo": 0.47819570337591893
+      },
+      {
+        "grupo": "validacion",
+        "variable": "customer_type",
+        "categoria": "Contract",
+        "registros": 9,
+        "porcentaje_grupo": 0.06423524373706374
+      },
+      {
+        "grupo": "validacion",
+        "variable": "distribution_channel",
+        "categoria": "TA/TO",
+        "registros": 10646,
+        "porcentaje_grupo": 75.98315609164229
+      },
+      {
+        "grupo": "validacion",
+        "variable": "distribution_channel",
+        "categoria": "Direct",
+        "registros": 2173,
+        "porcentaje_grupo": 15.509242737848833
+      },
+      {
+        "grupo": "validacion",
+        "variable": "distribution_channel",
+        "categoria": "Corporate",
+        "registros": 1122,
+        "porcentaje_grupo": 8.007993719220613
+      },
+      {
+        "grupo": "validacion",
+        "variable": "distribution_channel",
+        "categoria": "GDS",
+        "registros": 70,
+        "porcentaje_grupo": 0.4996074512882735
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "hotel",
+        "categoria": "City Hotel",
+        "registros": 8502,
+        "porcentaje_grupo": 67.68569381418676
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "hotel",
+        "categoria": "Resort Hotel",
+        "registros": 4059,
+        "porcentaje_grupo": 32.31430618581323
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "market_segment",
+        "categoria": "Online TA",
+        "registros": 6681,
+        "porcentaje_grupo": 53.188440410795316
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "market_segment",
+        "categoria": "Groups",
+        "registros": 3378,
+        "porcentaje_grupo": 26.89276331502269
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "market_segment",
+        "categoria": "Offline TA/TO",
+        "registros": 1612,
+        "porcentaje_grupo": 12.833373139081283
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "market_segment",
+        "categoria": "Direct",
+        "registros": 670,
+        "porcentaje_grupo": 5.333970225300534
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "market_segment",
+        "categoria": "Corporate",
+        "registros": 214,
+        "porcentaje_grupo": 1.7036860122601705
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "market_segment",
+        "categoria": "Complementary",
+        "registros": 6,
+        "porcentaje_grupo": 0.04776689754000478
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "customer_type",
+        "categoria": "Transient",
+        "registros": 9796,
+        "porcentaje_grupo": 77.9874213836478
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "customer_type",
+        "categoria": "Transient-Party",
+        "registros": 2439,
+        "porcentaje_grupo": 19.417243850011943
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "customer_type",
+        "categoria": "Contract",
+        "registros": 297,
+        "porcentaje_grupo": 2.3644614282302365
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "customer_type",
+        "categoria": "Group",
+        "registros": 29,
+        "porcentaje_grupo": 0.23087333811002309
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "distribution_channel",
+        "categoria": "TA/TO",
+        "registros": 11301,
+        "porcentaje_grupo": 89.96895151659899
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "distribution_channel",
+        "categoria": "Direct",
+        "registros": 980,
+        "porcentaje_grupo": 7.80192659820078
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "distribution_channel",
+        "categoria": "Corporate",
+        "registros": 263,
+        "porcentaje_grupo": 2.0937823421702095
+      },
+      {
+        "grupo": "no_madura_validacion",
+        "variable": "distribution_channel",
+        "categoria": "GDS",
+        "registros": 17,
+        "porcentaje_grupo": 0.13533954303001353
+      }
+    ],
+    "cierres_hipoteticos": [
+      {
+        "escenario_no_verificado": "cierre_hipotetico_ultimo_dia_llegadas",
+        "corte_exclusivo": "2017-09-01",
+        "registros_prueba": 26565,
+        "fecha_estado_en_o_despues_del_corte": 368,
+        "no_cumple_regla_madurez": 652,
+        "cumple_regla_madurez": 25913
+      },
+      {
+        "escenario_no_verificado": "dia_siguiente_al_maximo_estado_no_es_cierre_documentado",
+        "corte_exclusivo": "2017-09-15",
+        "registros_prueba": 26565,
+        "fecha_estado_en_o_despues_del_corte": 0,
+        "no_cumple_regla_madurez": 2,
+        "cumple_regla_madurez": 26563
+      },
+      {
+        "escenario_no_verificado": "corte_posterior_al_maximo_de_cota_no_verificado",
+        "corte_exclusivo": "2017-09-16",
+        "registros_prueba": 26565,
+        "fecha_estado_en_o_despues_del_corte": 0,
+        "no_cumple_regla_madurez": 0,
+        "cumple_regla_madurez": 26565
+      }
+    ],
+    "umbrales_validacion": [
+      {
+        "umbral": 0.0,
+        "precision": 0.26172293198201413,
+        "recall": 1.0,
+        "f1": 0.4148659350605272,
+        "falsos_positivos": 10344,
+        "falsos_negativos": 0,
+        "verdaderos_positivos": 3667,
+        "verdaderos_negativos": 0,
+        "alertas": 14011,
+        "fraccion_alertas": 1.0
+      },
+      {
+        "umbral": 0.05,
+        "precision": 0.3035876064504439,
+        "recall": 0.9138260158167439,
+        "f1": 0.45576334580074807,
+        "falsos_positivos": 7687,
+        "falsos_negativos": 316,
+        "verdaderos_positivos": 3351,
+        "verdaderos_negativos": 2657,
+        "alertas": 11038,
+        "fraccion_alertas": 0.7878095781885661
+      },
+      {
+        "umbral": 0.1,
+        "precision": 0.3619751166407465,
+        "recall": 0.7616580310880829,
+        "f1": 0.49073179302468595,
+        "falsos_positivos": 4923,
+        "falsos_negativos": 874,
+        "verdaderos_positivos": 2793,
+        "verdaderos_negativos": 5421,
+        "alertas": 7716,
+        "fraccion_alertas": 0.5507101563057598
+      },
+      {
+        "umbral": 0.15,
+        "precision": 0.4004451292586886,
+        "recall": 0.6378511044450504,
+        "f1": 0.49200673117374844,
+        "falsos_positivos": 3502,
+        "falsos_negativos": 1328,
+        "verdaderos_positivos": 2339,
+        "verdaderos_negativos": 6842,
+        "alertas": 5841,
+        "fraccion_alertas": 0.41688673185354364
+      },
+      {
+        "umbral": 0.2,
+        "precision": 0.42086099807239236,
+        "recall": 0.5358603763294246,
+        "f1": 0.47144913627639157,
+        "falsos_positivos": 2704,
+        "falsos_negativos": 1702,
+        "verdaderos_positivos": 1965,
+        "verdaderos_negativos": 7640,
+        "alertas": 4669,
+        "fraccion_alertas": 0.3332381700092784
+      },
+      {
+        "umbral": 0.25,
+        "precision": 0.43457446808510636,
+        "recall": 0.44559585492227977,
+        "f1": 0.44001615726403664,
+        "falsos_positivos": 2126,
+        "falsos_negativos": 2033,
+        "verdaderos_positivos": 1634,
+        "verdaderos_negativos": 8218,
+        "alertas": 3760,
+        "fraccion_alertas": 0.2683605738348441
+      },
+      {
+        "umbral": 0.3,
+        "precision": 0.46777281429483086,
+        "recall": 0.39978183801472594,
+        "f1": 0.4311130716071166,
+        "falsos_positivos": 1668,
+        "falsos_negativos": 2201,
+        "verdaderos_positivos": 1466,
+        "verdaderos_negativos": 8676,
+        "alertas": 3134,
+        "fraccion_alertas": 0.22368139319106417
+      },
+      {
+        "umbral": 0.35,
+        "precision": 0.5009846396218984,
+        "recall": 0.3468775565857649,
+        "f1": 0.4099258781824041,
+        "falsos_positivos": 1267,
+        "falsos_negativos": 2395,
+        "verdaderos_positivos": 1272,
+        "verdaderos_negativos": 9077,
+        "alertas": 2539,
+        "fraccion_alertas": 0.1812147598315609
+      },
+      {
+        "umbral": 0.4,
+        "precision": 0.5177270519669742,
+        "recall": 0.2907008453776929,
+        "f1": 0.3723367097450227,
+        "falsos_positivos": 993,
+        "falsos_negativos": 2601,
+        "verdaderos_positivos": 1066,
+        "verdaderos_negativos": 9351,
+        "alertas": 2059,
+        "fraccion_alertas": 0.1469559631717936
+      },
+      {
+        "umbral": 0.45,
+        "precision": 0.5319537431527693,
+        "recall": 0.23834196891191708,
+        "f1": 0.32919020715630887,
+        "falsos_positivos": 769,
+        "falsos_negativos": 2793,
+        "verdaderos_positivos": 874,
+        "verdaderos_negativos": 9575,
+        "alertas": 1643,
+        "fraccion_alertas": 0.1172650060666619
+      },
+      {
+        "umbral": 0.5,
+        "precision": 0.5335968379446641,
+        "recall": 0.18407417507499318,
+        "f1": 0.2737226277372263,
+        "falsos_positivos": 590,
+        "falsos_negativos": 2992,
+        "verdaderos_positivos": 675,
+        "verdaderos_negativos": 9754,
+        "alertas": 1265,
+        "fraccion_alertas": 0.09028620369709514
+      },
+      {
+        "umbral": 0.6,
+        "precision": 0.6049046321525886,
+        "recall": 0.12107990182710662,
+        "f1": 0.20177232447171098,
+        "falsos_positivos": 290,
+        "falsos_negativos": 3223,
+        "verdaderos_positivos": 444,
+        "verdaderos_negativos": 10054,
+        "alertas": 734,
+        "fraccion_alertas": 0.05238740989222754
+      },
+      {
+        "umbral": 0.7,
+        "precision": 0.6948051948051948,
+        "recall": 0.05835833106081265,
+        "f1": 0.10767295597484276,
+        "falsos_positivos": 94,
+        "falsos_negativos": 3453,
+        "verdaderos_positivos": 214,
+        "verdaderos_negativos": 10250,
+        "alertas": 308,
+        "fraccion_alertas": 0.021982727856684033
+      },
+      {
+        "umbral": 0.8,
+        "precision": 0.81,
+        "recall": 0.02208890100899918,
+        "f1": 0.0430050438014335,
+        "falsos_positivos": 19,
+        "falsos_negativos": 3586,
+        "verdaderos_positivos": 81,
+        "verdaderos_negativos": 10325,
+        "alertas": 100,
+        "fraccion_alertas": 0.0071372493041181925
+      },
+      {
+        "umbral": 0.9,
+        "precision": 0.8,
+        "recall": 0.00109080992637033,
+        "f1": 0.002178649237472767,
+        "falsos_positivos": 1,
+        "falsos_negativos": 3663,
+        "verdaderos_positivos": 4,
+        "verdaderos_negativos": 10343,
+        "alertas": 5,
+        "fraccion_alertas": 0.00035686246520590966
+      },
+      {
+        "umbral": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "falsos_positivos": 0,
+        "falsos_negativos": 3667,
+        "verdaderos_positivos": 0,
+        "verdaderos_negativos": 10344,
+        "alertas": 0,
+        "fraccion_alertas": 0.0
+      }
+    ],
+    "calibracion_validacion": [
+      {
+        "banda": "(-0.001, 0.1]",
+        "registros": 6295,
+        "probabilidad_media": 0.05125930250873091,
+        "tasa_observada": 0.13884034948371723,
+        "cancelaciones": 874,
+        "desviacion_observada_menos_predicha": 0.08758104697498632
+      },
+      {
+        "banda": "(0.1, 0.2]",
+        "registros": 3047,
+        "probabilidad_media": 0.14158698235741438,
+        "tasa_observada": 0.27174269773547755,
+        "cancelaciones": 828,
+        "desviacion_observada_menos_predicha": 0.13015571537806317
+      },
+      {
+        "banda": "(0.2, 0.3]",
+        "registros": 1535,
+        "probabilidad_media": 0.2447784909114556,
+        "tasa_observada": 0.3250814332247557,
+        "cancelaciones": 499,
+        "desviacion_observada_menos_predicha": 0.0803029423133001
+      },
+      {
+        "banda": "(0.3, 0.4]",
+        "registros": 1075,
+        "probabilidad_media": 0.3465524998698068,
+        "tasa_observada": 0.37209302325581395,
+        "cancelaciones": 400,
+        "desviacion_observada_menos_predicha": 0.025540523386007152
+      },
+      {
+        "banda": "(0.4, 0.5]",
+        "registros": 794,
+        "probabilidad_media": 0.44659497497048595,
+        "tasa_observada": 0.4924433249370277,
+        "cancelaciones": 391,
+        "desviacion_observada_menos_predicha": 0.045848349966541746
+      },
+      {
+        "banda": "(0.5, 0.6]",
+        "registros": 531,
+        "probabilidad_media": 0.5471620374197119,
+        "tasa_observada": 0.4350282485875706,
+        "cancelaciones": 231,
+        "desviacion_observada_menos_predicha": -0.11213378883214131
+      },
+      {
+        "banda": "(0.6, 0.7]",
+        "registros": 426,
+        "probabilidad_media": 0.6474304377038551,
+        "tasa_observada": 0.539906103286385,
+        "cancelaciones": 230,
+        "desviacion_observada_menos_predicha": -0.10752433441747011
+      },
+      {
+        "banda": "(0.7, 0.8]",
+        "registros": 208,
+        "probabilidad_media": 0.7474954360572013,
+        "tasa_observada": 0.6394230769230769,
+        "cancelaciones": 133,
+        "desviacion_observada_menos_predicha": -0.10807235913412438
+      },
+      {
+        "banda": "(0.8, 0.9]",
+        "registros": 95,
+        "probabilidad_media": 0.8400685169468152,
+        "tasa_observada": 0.8105263157894737,
+        "cancelaciones": 77,
+        "desviacion_observada_menos_predicha": -0.02954220115734152
+      },
+      {
+        "banda": "(0.9, 1.0]",
+        "registros": 5,
+        "probabilidad_media": 0.9338340600724985,
+        "tasa_observada": 0.8,
+        "cancelaciones": 4,
+        "desviacion_observada_menos_predicha": -0.13383406007249843
+      }
+    ],
+    "diagnosticos_train_validacion": [
+      {
+        "grupo": "entrenamiento_ajuste_interno",
+        "registros": 48428,
+        "accuracy": 0.8047823573139506,
+        "precision": 0.7632527707304045,
+        "recall": 0.659284890426759,
+        "f1": 0.7074695216288137,
+        "roc_auc": 0.8745523274778715,
+        "brier": 0.13306421395666557,
+        "log_loss": 0.41437210925833606,
+        "average_precision": 0.8233395245219058
+      },
+      {
+        "grupo": "validacion",
+        "registros": 14011,
+        "accuracy": 0.7443437299264863,
+        "precision": 0.5335968379446641,
+        "recall": 0.18407417507499318,
+        "f1": 0.2737226277372263,
+        "roc_auc": 0.7004404102896362,
+        "brier": 0.18244898262265397,
+        "log_loss": 0.5677519388565688,
+        "average_precision": 0.45782411918388366
+      }
+    ],
+    "distribucion_probabilidades": [
+      {
+        "grupo": "entrenamiento_ajuste_interno",
+        "tasa_observada": 0.3580573222102916,
+        "probabilidad_media": 0.3580017292971024,
+        "probabilidad_mediana": 0.2485358163287089,
+        "p10": 0.03602408612019502,
+        "p90": 0.8865470295750777,
+        "p95": 0.9305204853927712,
+        "fraccion_alertas_05": 0.30928388535557944
+      },
+      {
+        "grupo": "validacion",
+        "tasa_observada": 0.26172293198201413,
+        "probabilidad_media": 0.1900843133261803,
+        "probabilidad_mediana": 0.11542693070184758,
+        "p10": 0.024231292312042515,
+        "p90": 0.4776960475103323,
+        "p95": 0.6059831749854172,
+        "fraccion_alertas_05": 0.09028620369709514
+      }
+    ],
+    "categorias_nuevas_validacion": [
+      {
+        "variable": "hotel",
+        "registros_validacion_categoria_no_vista": 0,
+        "porcentaje": 0.0,
+        "n_categorias_no_vistas": 0
+      },
+      {
+        "variable": "arrival_date_month",
+        "registros_validacion_categoria_no_vista": 0,
+        "porcentaje": 0.0,
+        "n_categorias_no_vistas": 0
+      },
+      {
+        "variable": "meal",
+        "registros_validacion_categoria_no_vista": 0,
+        "porcentaje": 0.0,
+        "n_categorias_no_vistas": 0
+      },
+      {
+        "variable": "country",
+        "registros_validacion_categoria_no_vista": 19,
+        "porcentaje": 0.13560773677824567,
+        "n_categorias_no_vistas": 10
+      },
+      {
+        "variable": "market_segment",
+        "registros_validacion_categoria_no_vista": 0,
+        "porcentaje": 0.0,
+        "n_categorias_no_vistas": 0
+      },
+      {
+        "variable": "distribution_channel",
+        "registros_validacion_categoria_no_vista": 0,
+        "porcentaje": 0.0,
+        "n_categorias_no_vistas": 0
+      },
+      {
+        "variable": "reserved_room_type",
+        "registros_validacion_categoria_no_vista": 0,
+        "porcentaje": 0.0,
+        "n_categorias_no_vistas": 0
+      },
+      {
+        "variable": "customer_type",
+        "registros_validacion_categoria_no_vista": 0,
+        "porcentaje": 0.0,
+        "n_categorias_no_vistas": 0
+      }
+    ],
+    "escenarios_coste_relativo": [
+      {
+        "umbral": 0.0,
+        "falsos_positivos": 10344,
+        "falsos_negativos": 0,
+        "alertas": 14011,
+        "unidades_relativas_FP_1_FN_1": 10344,
+        "unidades_relativas_FP_1_FN_3": 10344,
+        "unidades_relativas_FP_1_FN_10": 10344
+      },
+      {
+        "umbral": 0.05,
+        "falsos_positivos": 7687,
+        "falsos_negativos": 316,
+        "alertas": 11038,
+        "unidades_relativas_FP_1_FN_1": 8003,
+        "unidades_relativas_FP_1_FN_3": 8635,
+        "unidades_relativas_FP_1_FN_10": 10847
+      },
+      {
+        "umbral": 0.1,
+        "falsos_positivos": 4923,
+        "falsos_negativos": 874,
+        "alertas": 7716,
+        "unidades_relativas_FP_1_FN_1": 5797,
+        "unidades_relativas_FP_1_FN_3": 7545,
+        "unidades_relativas_FP_1_FN_10": 13663
+      },
+      {
+        "umbral": 0.15,
+        "falsos_positivos": 3502,
+        "falsos_negativos": 1328,
+        "alertas": 5841,
+        "unidades_relativas_FP_1_FN_1": 4830,
+        "unidades_relativas_FP_1_FN_3": 7486,
+        "unidades_relativas_FP_1_FN_10": 16782
+      },
+      {
+        "umbral": 0.2,
+        "falsos_positivos": 2704,
+        "falsos_negativos": 1702,
+        "alertas": 4669,
+        "unidades_relativas_FP_1_FN_1": 4406,
+        "unidades_relativas_FP_1_FN_3": 7810,
+        "unidades_relativas_FP_1_FN_10": 19724
+      },
+      {
+        "umbral": 0.25,
+        "falsos_positivos": 2126,
+        "falsos_negativos": 2033,
+        "alertas": 3760,
+        "unidades_relativas_FP_1_FN_1": 4159,
+        "unidades_relativas_FP_1_FN_3": 8225,
+        "unidades_relativas_FP_1_FN_10": 22456
+      },
+      {
+        "umbral": 0.3,
+        "falsos_positivos": 1668,
+        "falsos_negativos": 2201,
+        "alertas": 3134,
+        "unidades_relativas_FP_1_FN_1": 3869,
+        "unidades_relativas_FP_1_FN_3": 8271,
+        "unidades_relativas_FP_1_FN_10": 23678
+      },
+      {
+        "umbral": 0.35,
+        "falsos_positivos": 1267,
+        "falsos_negativos": 2395,
+        "alertas": 2539,
+        "unidades_relativas_FP_1_FN_1": 3662,
+        "unidades_relativas_FP_1_FN_3": 8452,
+        "unidades_relativas_FP_1_FN_10": 25217
+      },
+      {
+        "umbral": 0.4,
+        "falsos_positivos": 993,
+        "falsos_negativos": 2601,
+        "alertas": 2059,
+        "unidades_relativas_FP_1_FN_1": 3594,
+        "unidades_relativas_FP_1_FN_3": 8796,
+        "unidades_relativas_FP_1_FN_10": 27003
+      },
+      {
+        "umbral": 0.45,
+        "falsos_positivos": 769,
+        "falsos_negativos": 2793,
+        "alertas": 1643,
+        "unidades_relativas_FP_1_FN_1": 3562,
+        "unidades_relativas_FP_1_FN_3": 9148,
+        "unidades_relativas_FP_1_FN_10": 28699
+      },
+      {
+        "umbral": 0.5,
+        "falsos_positivos": 590,
+        "falsos_negativos": 2992,
+        "alertas": 1265,
+        "unidades_relativas_FP_1_FN_1": 3582,
+        "unidades_relativas_FP_1_FN_3": 9566,
+        "unidades_relativas_FP_1_FN_10": 30510
+      },
+      {
+        "umbral": 0.6,
+        "falsos_positivos": 290,
+        "falsos_negativos": 3223,
+        "alertas": 734,
+        "unidades_relativas_FP_1_FN_1": 3513,
+        "unidades_relativas_FP_1_FN_3": 9959,
+        "unidades_relativas_FP_1_FN_10": 32520
+      },
+      {
+        "umbral": 0.7,
+        "falsos_positivos": 94,
+        "falsos_negativos": 3453,
+        "alertas": 308,
+        "unidades_relativas_FP_1_FN_1": 3547,
+        "unidades_relativas_FP_1_FN_3": 10453,
+        "unidades_relativas_FP_1_FN_10": 34624
+      },
+      {
+        "umbral": 0.8,
+        "falsos_positivos": 19,
+        "falsos_negativos": 3586,
+        "alertas": 100,
+        "unidades_relativas_FP_1_FN_1": 3605,
+        "unidades_relativas_FP_1_FN_3": 10777,
+        "unidades_relativas_FP_1_FN_10": 35879
+      },
+      {
+        "umbral": 0.9,
+        "falsos_positivos": 1,
+        "falsos_negativos": 3663,
+        "alertas": 5,
+        "unidades_relativas_FP_1_FN_1": 3664,
+        "unidades_relativas_FP_1_FN_3": 10990,
+        "unidades_relativas_FP_1_FN_10": 36631
+      },
+      {
+        "umbral": 1.0,
+        "falsos_positivos": 0,
+        "falsos_negativos": 3667,
+        "alertas": 0,
+        "unidades_relativas_FP_1_FN_1": 3667,
+        "unidades_relativas_FP_1_FN_3": 11001,
+        "unidades_relativas_FP_1_FN_10": 36670
+      }
+    ]
+  },
+  "conclusion": "Implementación del pipeline correcta; partición solo defendible como benchmark retrospectivo condicionado. Corregir protocolo de cierre, seguimiento y población antes de comparación formal. No se aplican cambios.",
+  "verificacion": {
+    "archivos_previos_protegidos": {
+      "data/raw/hotel_bookings.csv": "7c2ae42a7353905ea136e5c2287f17c92c5435826598bfbb8491c6f0c7b1fc06",
+      "data/processed/hotel_bookings_prepared.csv": "2718ad6c88b52da2914b54e5f6eccb51815a2ff3c59100793c093292f900c60c",
+      "src/baseline.py": "05c3fe2e7d36e14dbd26bbd370c29a4c3bb01cc7fb2d4de92f3c0b57be9820f0",
+      "src/cleaning.py": "52793ede516563751221b92be18ae81850f0fc4802d9b6f4dff27ac15bd49b89",
+      "src/features.py": "c150d2ef7a93d2aba990a926cda1eca746e48011764e4dab8ad60ed3cc620213",
+      "src/inspection.py": "5b41fd7480ddc21989fb65b6c2c8190fc14f9f8ea100357d98ce85c3d7aebedc",
+      "src/preparation.py": "403f6f45167d319a2841b1843546dda2cfa2f47bc1e662e1ebcd1b4f04210eaa",
+      "src/preprocessing.py": "2877c53e7cefd7d673b4b46500df54ad888c1242af0a783ddd692f45532bae67",
+      "src/run_notebook.py": "dbc6847e558036773ddb0c8750ddffaeb9228685710081e9a9702f410a9477e4",
+      "src/splitting.py": "bcbb552a26ddc839336560ce5f7368a4b4ae834113e5ccca120f523bae898436",
+      "src/__init__.py": "85312e2cd5f7538b0bbe0521faf14f9a28eee7195b50f3c5986d6d5d76008515",
+      "notebooks/baseline.ipynb": "b5288ce029bc7125ae1827b42aea0aea92e52ab55fbd3f4e525cd1e56d6bf796",
+      "notebooks/eda.ipynb": "795f15aa3ee03b538dffff01cc537f41486034aa9b5c404acf5475f0bade66a3",
+      "notebooks/preparacion.ipynb": "64f1de722c79e8b4f3dc954354d000781633289a1f0f84269aed32a720e55fc9",
+      "reports/figures/01_ausencias.png": "7944a583b51df877425cbed85c1b79386781aad8332ec2943ce9cdf9efb79b49",
+      "reports/figures/02_objetivo_hoteles.png": "88e5aded3b970d1a3155d8b424f39af12c9f9fa993dcc7606ddbe8dfe20c080e",
+      "reports/figures/03_antelacion_adr.png": "8fa26cadee6b044d6aaa13458785dbb4c6faa791b756e81cd7f3a981f299e3b4",
+      "reports/figures/04_tasas_antelacion.png": "d8d31647243caae409a239fab56b82519690e4ba695e01759fc3bcdf34aea60d",
+      "reports/figures/05_customer_type.png": "95f66ebbb0559255e5305d5217f5d832290b6fc7ccabe0b44624e516cbd8a391",
+      "reports/figures/05_deposit_type.png": "8a290ceb7e7d4c739600e386571ca6e1370f54a32d6108dc4d886d4fa871c588",
+      "reports/figures/05_distribution_channel.png": "530b4d08197b0c12af3f5ed8e1ba53953ea18379cad706eaa227fbdd79b7e01d",
+      "reports/figures/05_market_segment.png": "e7d21d4a0233825ca8a88df1582a224059e32adc9fb9d227b49c94044b71d2a7",
+      "reports/figures/06_historial_solicitudes.png": "d8c169fabe2eb94356eafb98d145495b43cdc27b721a96a51648244d958b9270",
+      "reports/figures/07_estancia_huespedes.png": "de1450e08043d9cb1f95020548fff1b8caa26e9d22a44e3a46242792ff224c39",
+      "reports/figures/08_evolucion_temporal.png": "fff32f5fd46b61c03d5e5e997523f552e9fa3d34dd8820d934fcadd47e6a5902",
+      "reports/figures/09_estacionalidad.png": "b2ed8b53e7d3b1a0a83ca7e217a592528f9ee790370730c6db1cb5cf65d1eeaa",
+      "reports/figures/10_correlaciones.png": "fc88d822d224c090e8fb12ae5c583a231cf78e389a662edc2a6a4be30e24be5b",
+      "reports/figures/baseline_01_particiones.png": "ff959839d025cd7002994f409aa99f41a239fd30f7faa3007eb6cab9099f4b96",
+      "reports/figures/baseline_02_confusion_validacion.png": "2983f7af1fad9dc64bc164996fb45902134d95836ce822e35e94886dd4d20214",
+      "reports/figures/baseline_03_roc_validacion.png": "e73746da2350618b27f22a30b9a2c440041a9b3f7f07f980068fc3dc0a645a03",
+      "reports/baseline_predicciones_validacion.csv": "b5da5e5e4c979d6ffdb85028ac301a288c2476121204a708e3babb9ccda556d4",
+      "reports/baseline_resultados.json": "fe3b57c6c870c67b5d2386a228f10883837a4f07947f2300cee9831ae231306b",
+      "reports/baseline_verificacion.json": "692e9a843952ce8b3404eaca7520d78528161b41f43406baa167e9ab73c1808d",
+      "reports/division_temporal.json": "5b33fe8e0f8885d02b412ab2e181620407728e1c771ab3b617f4bf418e13d374",
+      "reports/eda_auditoria_leakage.csv": "6d891386278cd6b0b2330eefba635ea7bc9d8df1c83daf811bc723c4a2b9c9ba",
+      "reports/eda_resumen.json": "176d63df132d7279c208ee011cfe3fbc9e8d89a1aa6cd29e48b8e236dcfc04b3",
+      "reports/eda_verificacion.json": "3ce28cf4858303992e24dbcb39b2c7e4e14bcf3abb8cf9b923593b70fd2289c3",
+      "reports/fase_1_inspeccion.md": "bfd6f6d58eb61411d46417fd6d916db9e4b5e9a36b22edf02e31501805ac8df7",
+      "reports/fase_2_eda.md": "b2b0d5ea1a7bcbc072c69e8b9ad8537b9e99c6be45a7bfcc98c181fa37b21207",
+      "reports/fase_3_preparacion.md": "8ee57b577f10d4c2e9b4e26d4a651035c8f351eb0ce8e9e0759d79a7c216d804",
+      "reports/fase_4_baseline.md": "ac790bd6c98bf6b24b7998899a430eb3a8b3f5fb20e63c7780cb446608531342",
+      "reports/inspeccion_dataset.json": "f89c6b23e95af0912365bd2f2e2d0b29729cc75ead1bddeb5f9f0a8b08aba536",
+      "reports/particiones_temporales.csv": "0bbb709048a34d2843f856c2fc9e0d129e8408a3f3d5ed474a86716bf2362a4a",
+      "reports/preparacion_auditoria_variables.csv": "aa62e4e62bce731972df2deb7105f283b0d0c3dbd7cbd7019246803e2cb976c6",
+      "reports/preparacion_resumen.json": "d18aa575805e54598fa5bb052836c61dc45977ef1425d23e899cdd407583dd29",
+      "reports/preparacion_verificacion.json": "c6c89c60777cea68ac92899dd66528c56c8a012cfcd417dd444ff895ce1639a3",
+      "reports/verificacion_referencias.json": "0c0ed2c81fa4d49f314121dcea04094efc52acdac7df21791e9400c799f5aff1"
+    },
+    "sin_cambios": true,
+    "referencias_sin_cambios": 105,
+    "referencias_no_disponibles": 0
+  }
+}

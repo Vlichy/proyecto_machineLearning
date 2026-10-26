@@ -1,0 +1,7 @@
+particion,n,canceladas,no_canceladas,tasa_cancelacion,lead_p10,lead_mediana,lead_p90,llegada_min,llegada_max,reserva_proxy_min,reserva_proxy_max
+entrenamiento,49157,17585.0,31572.0,0.35773135057062067,1.0,56.0,254.0,2015-07-01,2016-06-30,2013-06-24,2016-06-30
+embargo_train_validacion,9635,,,,6.0,117.0,245.0,2016-07-01,2016-08-31,2015-05-14,2016-08-31
+validacion,19911,7570.0,12341.0,0.38019185374918385,4.0,66.0,313.0,2016-09-01,2016-12-31,2015-02-20,2016-12-31
+embargo_validacion_prueba,7858,,,,1.0,28.0,134.0,2017-01-01,2017-02-28,2015-07-10,2017-02-28
+prueba_reservada,32829,,,,6.0,103.0,264.0,2017-03-01,2017-08-31,2015-07-10,2017-08-31
+fuera_cobertura,0,,,,,,,,,,

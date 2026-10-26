@@ -1,0 +1,109 @@
+{
+  "cortes": {
+    "validacion": "2016-07-01",
+    "prueba": "2017-01-01"
+  },
+  "regla_madurez": "label_available_after = max(llegada + noches, fecha_estado_final) + 1 día; cota offline no probada como disponibilidad real",
+  "particiones": [
+    {
+      "particion": "entrenamiento",
+      "registros": 48428,
+      "no_canceladas": 31088,
+      "canceladas": 17340,
+      "tasa_cancelacion": 0.3580573222102916,
+      "proxy_min": "2013-06-24",
+      "proxy_max": "2016-06-29",
+      "llegada_min": "2015-07-01",
+      "llegada_max": "2016-06-29",
+      "madurez_min": "2015-07-02",
+      "madurez_max": "2016-06-30"
+    },
+    {
+      "particion": "validacion",
+      "registros": 14011,
+      "no_canceladas": 10344,
+      "canceladas": 3667,
+      "tasa_cancelacion": 0.26172293198201413,
+      "proxy_min": "2016-07-01",
+      "proxy_max": "2016-12-30",
+      "llegada_min": "2016-07-01",
+      "llegada_max": "2016-12-30",
+      "madurez_min": "2016-07-03",
+      "madurez_max": "2016-12-31"
+    },
+    {
+      "particion": "prueba_reservada",
+      "registros": 26565,
+      "no_canceladas": 18163,
+      "canceladas": 8402,
+      "tasa_cancelacion": 0.3162808206286467,
+      "proxy_min": "2017-01-01",
+      "proxy_max": "2017-08-31",
+      "llegada_min": "2017-01-01",
+      "llegada_max": "2017-08-31",
+      "madurez_min": "2017-01-03",
+      "madurez_max": "2017-09-15"
+    },
+    {
+      "particion": "no_madura_entrenamiento",
+      "registros": 17825,
+      "no_canceladas": 9348,
+      "canceladas": 8477,
+      "tasa_cancelacion": 0.4755680224403927,
+      "proxy_min": "2015-02-20",
+      "proxy_max": "2016-06-30",
+      "llegada_min": "2016-06-14",
+      "llegada_max": "2017-08-29",
+      "madurez_min": "2016-07-01",
+      "madurez_max": "2017-08-31"
+    },
+    {
+      "particion": "no_madura_validacion",
+      "registros": 12561,
+      "no_canceladas": 6223,
+      "canceladas": 6338,
+      "tasa_cancelacion": 0.5045776610142505,
+      "proxy_min": "2016-07-01",
+      "proxy_max": "2016-12-31",
+      "llegada_min": "2016-12-13",
+      "llegada_max": "2017-08-31",
+      "madurez_min": "2017-01-01",
+      "madurez_max": "2017-09-12"
+    }
+  ],
+  "meses_entrenamiento_por_hotel": {
+    "City Hotel": {
+      "1": 1364,
+      "2": 2371,
+      "3": 3046,
+      "4": 3561,
+      "5": 3676,
+      "6": 3472,
+      "7": 1398,
+      "8": 2480,
+      "9": 3529,
+      "10": 3386,
+      "11": 1235,
+      "12": 1654
+    },
+    "Resort Hotel": {
+      "1": 884,
+      "2": 1520,
+      "3": 1778,
+      "4": 1867,
+      "5": 1802,
+      "6": 1091,
+      "7": 1378,
+      "8": 1409,
+      "9": 1585,
+      "10": 1571,
+      "11": 1105,
+      "12": 1266
+    }
+  },
+  "sin_solapamientos": true,
+  "sin_grupos_compartidos": true,
+  "filas_cubiertas": 119390,
+  "sha256_preparado": "2718ad6c88b52da2914b54e5f6eccb51815a2ff3c59100793c093292f900c60c",
+  "observacion_prueba": "Solo auditoría de clases/fechas y transform; sin predicciones ni métricas."
+}

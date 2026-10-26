@@ -1,0 +1,112 @@
+{
+  "protocolo": {
+    "version": "v2_estado_fechado_aproximado",
+    "validation_start": "2016-07-01",
+    "test_start": "2017-01-01",
+    "assumed_as_of_exclusive": "2018-12-01",
+    "accredited_as_of": null,
+    "status_recording_lag_days": 1,
+    "publication_date_reference": "2018-11-29",
+    "as_of_basis": "Supuesto retrospectivo: comienzo del mes siguiente a la publicación; no fecha de extracción ni cierre PMS acreditados.",
+    "availability_rule": "reservation_status_date + 1 día, estrictamente anterior al corte; aproximación, no primera disponibilidad demostrada."
+  },
+  "seed": 42,
+  "folds": [
+    [
+      "2015-10-01",
+      "2016-01-01"
+    ],
+    [
+      "2016-01-01",
+      "2016-04-01"
+    ],
+    [
+      "2016-04-01",
+      "2016-07-01"
+    ]
+  ],
+  "espacios_busqueda": {
+    "xgboost": {
+      "classifier__n_estimators": [
+        200,
+        400
+      ],
+      "classifier__max_depth": [
+        3,
+        5
+      ],
+      "classifier__learning_rate": [
+        0.03,
+        0.08
+      ],
+      "classifier__subsample": [
+        0.8,
+        1.0
+      ],
+      "classifier__colsample_bytree": [
+        0.8,
+        1.0
+      ],
+      "classifier__min_child_weight": [
+        1,
+        10
+      ],
+      "classifier__reg_lambda": [
+        1.0,
+        5.0
+      ]
+    },
+    "lightgbm": {
+      "classifier__n_estimators": [
+        200,
+        400
+      ],
+      "classifier__num_leaves": [
+        15,
+        31
+      ],
+      "classifier__learning_rate": [
+        0.03,
+        0.08
+      ],
+      "classifier__subsample": [
+        0.8,
+        1.0
+      ],
+      "classifier__colsample_bytree": [
+        0.8,
+        1.0
+      ],
+      "classifier__min_child_samples": [
+        20,
+        60
+      ],
+      "classifier__reg_lambda": [
+        0.0,
+        5.0
+      ]
+    }
+  },
+  "muestras_aleatorias_por_modelo": 8,
+  "incluye_referencia_inicial": true,
+  "total_configuraciones_por_modelo": 9,
+  "total_ajustes_cv": 54,
+  "scoring": "media AP no ponderada; desempate ROC-AUC; después índice",
+  "refit_cv": false,
+  "early_stopping": false,
+  "hilos_por_modelo": 4,
+  "busquedas_paralelas": 1,
+  "umbrales_descriptivos": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "calibracion_ajustada": false,
+  "regla_candidato": "Conservar inicial si la seleccionada no mejora simultáneamente AP y ROC-AUC externos; entre familias priorizar ambas, revisar errores, Brier, estabilidad y coste. Sin umbral operativo final."
+}
